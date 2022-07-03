@@ -64,7 +64,7 @@
    #ifdef FIVETHUMBS
                         &none &mo 1 &kp SPC &mo 2 &none
    #else
-                   &none &mo 1 &kp SPC     &sk RSFT &mo 2 &none
+                   &none &mo 1 &kp SPC     &kp RSFT &mo 2 &none
    #endif
                         >;
    #ifdef ENCODERS
