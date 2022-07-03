@@ -67,10 +67,8 @@
                    &none &mo 1 &kp SPC     &kp RSFT &mo 2 &none
    #endif
                         >;
-   #ifdef ENCODERS
-               sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
-   #endif
- 
+                sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+
                 };
 
                 lower_layer {
@@ -89,9 +87,7 @@
                                             &none &trans &trans     &trans &mo 3 &none
    #endif
                        >;
-   #ifdef ENCODERS
                 sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
-   #endif
                 };
 
                 raise_layer {
@@ -110,9 +106,7 @@
                                        &none &mo 3 &trans     &trans &trans &none
    #endif
                         >;
-   #ifdef ENCODERS
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-   #endif
                 };
 
                 adjust_layer {
