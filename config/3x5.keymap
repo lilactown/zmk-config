@@ -116,10 +116,10 @@
 // | spcl | spcr | back | swin | play |   |      | pdwn | pgup | swpl | entr |
 //                             |      |   | lclk |  num |
                         bindings = <
-   &kp TAB  &switch_app &tab_left &tab_right  &kp C_VOL_UP     &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT &mkp RCLK
-   &sk LCTL &sk LALT    &sk LGUI  &sk LSFT    &kp C_VOL_DN     &kp LEFT       &kp DOWN         &kp UP         &kp RIGHT       &kp BSPC
-   &none    &none       &none     &switch_win &kp C_PP         &none          &mwh SCROLL_DOWN &mwh SCROLL_UP &none           &kp RET
-                                             &trans &trans     &mkp LCLK &mo 3
+   &kp TAB     &switch_app  &tab_left &tab_right  &kp C_VOL_UP     &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT &mkp RCLK
+   &sk LCTL    &sk LALT     &sk LGUI  &sk LSFT    &kp C_VOL_DN     &kp LEFT       &kp DOWN         &kp UP         &kp RIGHT       &kp BSPC
+   &space_left &space_right &none     &switch_win &kp C_PP         &none          &mwh SCROLL_DOWN &mwh SCROLL_UP &none           &kp RET
+                                                 &trans &trans     &mkp LCLK &mo 3
                       >;
                 sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
                 };
