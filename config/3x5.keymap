@@ -111,7 +111,7 @@
 // | spcl | spcr | back | swin | play |   |      | pdwn | pgup | swpl | entr |
 //                             |      |   | ADJ  |      |
                         bindings = <
-   &kp TAB  &switch_app &tab_left &tab_right  &kp C_VOL_UP     &mmv MOUSE_LEFT &mmv MOUSE_DOWN &mmv MOUSE_UP &mmv MOUSE_RIGHT &kp DEL
+   &kp TAB  &switch_app &tab_left &tab_right  &kp C_VOL_UP     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp DEL
    &sk LCTL &sk LALT    &sk LGUI  &sk LSFT    &kp C_VOL_DN     &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp BSPC
    &none    &none       &none     &switch_win &kp C_PP         &none           &kp PG_DN       &kp PG_UP     &none            &kp RET
                                              &trans &trans     &mkp LCLK &mo 3
