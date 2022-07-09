@@ -98,7 +98,7 @@
 // |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  '  |
 // |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |
 // |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  ;  |
-//                   | LWR | SPC |   | SFT | RSE |
+//                   | nav | spc |   | sft | sym |
                         bindings = <
    &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U      &kp Y   &kp SQT
    &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E      &kp I   &kp O
@@ -111,14 +111,14 @@
 
                 nav {
 // ---------------------------------------------------------------------------
-// |  tab | sapp | tabl | tabr | vlup |   | rset | home | cpsl |  end |  del |
+// |  tab | sapp | tabl | tabr | vlup |   | mlft | mdwn |  mup | mrgt | rclk |
 // | ctrl |  alt |  cmd | shft | vldn |   | left | down |   up | rght | bspc |
 // | spcl | spcr | back | swin | play |   |      | pdwn | pgup | swpl | entr |
-//                             |      |   | ADJ  |      |
+//                             |      |   | lclk |  num |
                         bindings = <
-   &kp TAB  &switch_app &tab_left &tab_right  &kp C_VOL_UP     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp DEL
-   &sk LCTL &sk LALT    &sk LGUI  &sk LSFT    &kp C_VOL_DN     &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp BSPC
-   &none    &none       &none     &switch_win &kp C_PP         &none           &kp PG_DN       &kp PG_UP     &none            &kp RET
+   &kp TAB  &switch_app &tab_left &tab_right  &kp C_VOL_UP     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &mkp RCLK
+   &sk LCTL &sk LALT    &sk LGUI  &sk LSFT    &kp C_VOL_DN     &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT    &kp BSPC
+   &none    &none       &none     &switch_win &kp C_PP         &none           &kp PG_DN       &kp PG_UP     &none        &kp RET
                                              &trans &trans     &mkp LCLK &mo 3
                       >;
                 sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
