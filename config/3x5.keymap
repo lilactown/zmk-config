@@ -10,6 +10,11 @@
         acceleration-exponent=<1>;
         time-to-max-speed-ms = <500>;
       };
+      mwh {
+        delay-ms = <0>;
+        acceleration-exponent=<1>;
+        time-to-max-speed-ms = <0>;
+      };
     };
 
     macros {
