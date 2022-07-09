@@ -31,7 +31,7 @@
            , <&macro_release &kp LCTL>
            ;
       };
-      space_left: space_right {
+      space_right: space_right {
         label = "ZM_space_right";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
