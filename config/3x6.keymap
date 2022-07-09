@@ -19,6 +19,30 @@
            , <&macro_release &kp LGUI>
            ;
       };
+      space_left: space_left {
+        label = "ZM_space_left";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+           = <&macro_press &kp LCTL>
+           , <&macro_tap &kp LEFT>
+           , <&macro_release &kp LCTL>
+           ;
+      };
+      space_left: space_right {
+        label = "ZM_space_right";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+           = <&macro_press &kp LCTL>
+           , <&macro_tap &kp RIGHT>
+           , <&macro_release &kp LCTL>
+           ;
+      };
       switch_win: switch_win {
         label = "ZM_switch_win";
         compatible = "zmk, behavior-macro";
@@ -84,15 +108,15 @@
                 };
 
                 nav {
-// -------------------------------------------------------------------------------------
-// |    |  tab | swin | tabl | tabr | vlup |   | rset | home | cpsl |  end |  del |    |
+// --------------------------------------------------------------------------------------
+// |    |  tab | sapp | tabl | tabr | vlup |   | rset | home | cpsl |  end |  del |    |
 // |    | ctrl |  alt |  cmd | shft | vldn |   | left | down |   up | rght | bspc |    |
-// |    | spcl | spcr | back |  fwd | play |   |      | pdwn | pgup | swpl | entr |    |
+// |    | spcl | spcr | back | swin | play |   |      | pdwn | pgup | swpl | entr |    |
 //                           |      |      |   | ADJ  |      |
                         bindings = <
-   &none &kp TAB  &switch_app &tab_left &tab_right &kp C_VOL_UP     &reset   &kp HOME  &none     &kp END   &kp DEL  &none
-   &none &sk LCTL &sk LALT    &sk LGUI  &sk LSFT   &kp C_VOL_DN     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC &none
-   &none &none    &none       &none     &none      &kp C_PP         &none    &kp PG_DN &kp PG_UP &none     &kp RET  &none
+   &none &kp TAB  &switch_app &tab_left &tab_right  &kp C_VOL_UP     &reset   &kp HOME  &none     &kp END   &kp DEL  &none
+   &none &sk LCTL &sk LALT    &sk LGUI  &sk LSFT    &kp C_VOL_DN     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC &none
+   &none &none    &none       &none     &switch_win &kp C_PP         &none    &kp PG_DN &kp PG_UP &none     &kp RET  &none
    #ifdef FIVETHUMBS
                                                 &none &trans &sk RSFT &mo 3 &none
    #else
