@@ -40,7 +40,7 @@
 
     macros {
       copy: copy {
-        label = "ZM_close_tab";
+        label = "ZM_macro_copy";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         wait-ms = <0>;
@@ -52,7 +52,7 @@
            ;
       };
       cut: cut {
-        label = "ZM_close_tab";
+        label = "ZM_macro_cut";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         wait-ms = <0>;
@@ -64,7 +64,7 @@
            ;
       };
       paste: paste {
-        label = "ZM_close_tab";
+        label = "ZM_macro_paste";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         wait-ms = <0>;
