@@ -6,16 +6,22 @@
 / {
     combos {
       compatible = "zmk,combos";
-       combo_close_tab {
+       combo_paste {
         timeout-ms = <50>;
         key-positions = <3 4>;
-        bindings = <&close_tab>;
+        bindings = <&kp K_PASTE>;
         layers = <0>;
       };
-      combo_new_tab {
+      combo_copy {
         timeout-ms = <50>;
         key-positions = <13 14>;
-        bindings = <&new_tab>;
+        bindings = <&kp K_COPY>;
+        layers = <0>;
+      };
+      combo_cut {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&kp K_CUT>;
         layers = <0>;
       };
     };
