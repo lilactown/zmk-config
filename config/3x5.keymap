@@ -9,19 +9,19 @@
        combo_paste {
         timeout-ms = <50>;
         key-positions = <3 4>;
-        bindings = <&kp K_PASTE>;
+        bindings = <&paste>;
         layers = <0>;
       };
       combo_copy {
         timeout-ms = <50>;
         key-positions = <13 14>;
-        bindings = <&kp K_COPY>;
+        bindings = <&copy>;
         layers = <0>;
       };
       combo_cut {
         timeout-ms = <50>;
         key-positions = <23 24>;
-        bindings = <&kp K_CUT>;
+        bindings = <&cut>;
         layers = <0>;
       };
     };
@@ -39,7 +39,43 @@
     };
 
     macros {
-        close_tab: close_tab {
+      copy: copy {
+        label = "ZM_close_tab";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+           = <&macro_press &kp LGUI>
+           , <&macro_tap &kp C>
+           , <&macro_release &kp LGUI>
+           ;
+      };
+      cut: cut {
+        label = "ZM_close_tab";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+           = <&macro_press &kp LGUI>
+           , <&macro_tap &kp X>
+           , <&macro_release &kp LGUI>
+           ;
+      };
+      paste: paste {
+        label = "ZM_close_tab";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+           = <&macro_press &kp LGUI>
+           , <&macro_tap &kp V>
+           , <&macro_release &kp LGUI>
+           ;
+      };
+      close_tab: close_tab {
         label = "ZM_close_tab";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
