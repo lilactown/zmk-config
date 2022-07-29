@@ -6,9 +6,15 @@
 / {
     combos {
       compatible = "zmk,combos";
-      combo_new_tab {
+       combo_close_tab {
         timeout-ms = <50>;
         key-positions = <3 4>;
+        bindings = <&close_tab>;
+        layers = <0>;
+      };
+      combo_new_tab {
+        timeout-ms = <50>;
+        key-positions = <13 14>;
         bindings = <&new_tab>;
         layers = <0>;
       };
@@ -27,6 +33,18 @@
     };
 
     macros {
+        close_tab: close_tab {
+        label = "ZM_close_tab";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+           = <&macro_press &kp LGUI>
+           , <&macro_tap &kp W>
+           , <&macro_release &kp LGUI>
+           ;
+      };
       new_tab: new_tab {
         label = "ZM_new_tab";
         compatible = "zmk,behavior-macro";
