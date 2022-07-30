@@ -89,6 +89,8 @@
         time-to-max-speed-ms = <0>;
       };
       copy: copy {
+        compatible = "zmk,behavior-key-press";
+        label = "ZM_copy";
         #binding-cells = <0>;
         bindings = <&kp LG(C)>;
       };
