@@ -28,7 +28,7 @@
     behaviors {
       mmv {
         delay-ms = <0>;
-        acceleration-exponent=<1>;
+        acceleration-exponent=<2>;
         time-to-max-speed-ms = <500>;
       };
       mwh {
