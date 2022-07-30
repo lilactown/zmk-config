@@ -235,7 +235,7 @@
    &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U      &kp Y   &kp SQT
    &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E      &kp I   &kp O
    &kp Z &kp X &kp C &kp D &kp V     &kp K &kp H &kp COMMA  &kp DOT &kp SCLN
-                   &sl 1 &kp SPC     &kp RSFT &sl 2
+                   &mo 1 &kp SPC     &kp RSFT &mo 2
                    >;
                 sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
 
@@ -251,7 +251,7 @@
    &kp TAB     &switch_app  &tab_left &tab_right  &kp C_VOL_UP     &mmv MOVE_HOR(-1200) &mmv MOVE_VERT(1200) &mmv MOVE_VERT(-1200) &mmv MOVE_HOR(1200) &mkp RCLK
    &sk LCTL    &sk LALT     &sk LGUI  &sk LSFT    &kp C_VOL_DN     &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp BSPC
    &space_left &space_right &none     &none       &kp C_PP         &none                &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none               &kp RET
-                                                 &trans &trans     &mkp LCLK &sl 3
+                                                 &trans &trans     &mkp LCLK &mo 3
                       >;
                 sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
                 };
@@ -266,7 +266,7 @@
    &kp ESC   &kp LBKT &kp LCUR  &kp LPAR  &kp TILDE     &kp CARET &kp RPAR &kp RCUR &kp RBKT  &kp GRAVE
    &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DLLR      &kp HASH  &sk RSFT &sk RGUI &sk RALT  &sk RCTL
    &kp PLUS  &kp PIPE &kp AT    &kp FSLH  &kp PRCNT     &none     &kp BSLH &kp AMPS &kp QMARK &kp EXCL
-                                       &sl 3 &trans     &trans &trans
+                                       &mo 3 &trans     &trans &trans
                        >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
