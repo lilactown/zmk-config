@@ -2,10 +2,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/bt.h>
-#include "clojure.dtsi"
 
 / {
-    combos {
+   #include "clojure.dtsi"
+
+   combos {
+      // default layer
       compatible = "zmk,combos";
        combo_paste {
         timeout-ms = <50>;
@@ -24,6 +26,16 @@
         key-positions = <23 24>;
         bindings = <&cut>;
         layers = <0>;
+      };
+
+      // nav layer
+
+      // symbol layer
+      combo_clj {
+        timeout-ms = <50>;
+        key-positions = <3 4>;
+        bindings = <&clj_defn>;
+        layers = <2>;
       };
     };
     behaviors {
