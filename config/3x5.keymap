@@ -9,19 +9,19 @@
    combos {
       // default layer
       compatible = "zmk,combos";
-       combo_paste {
+       combo_default_top {
         timeout-ms = <50>;
         key-positions = <3 4>;
         bindings = <&paste>;
         layers = <0>;
       };
-      combo_copy {
+      combo_default_mid {
         timeout-ms = <50>;
         key-positions = <13 14>;
         bindings = <&copy>;
         layers = <0>;
       };
-      combo_cut {
+      combo_default_bot {
         timeout-ms = <50>;
         key-positions = <23 24>;
         bindings = <&cut>;
@@ -31,10 +31,22 @@
       // nav layer
 
       // symbol layer
-      combo_clj {
+      combo_sym_top {
         timeout-ms = <50>;
         key-positions = <3 4>;
         bindings = <&clj_defn>;
+        layers = <2>;
+      };
+      combo_sym_mid {
+        timeout-ms = <50>;
+        key-positions = <13 14>;
+        bindings = <&clj_fn>;
+        layers = <2>;
+      };
+      combo_sym_bot {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&clj_let>;
         layers = <2>;
       };
     };
