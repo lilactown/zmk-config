@@ -3,7 +3,7 @@ clj_defn: clj_defn {
   label = "ZM_clj_defn";
   #binding-cells = <0>;
   wait-ms = <30>;
-  tap-ms = <30>;
+  tap-ms = <0>;
   bindings
     = <&kp LPAR &kp D &kp E &kp F &kp N>
     , <&kp SPC &kp SPC>
