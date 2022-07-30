@@ -6,7 +6,7 @@ clj_defn: clj_defn {
   tap-ms = <30>;
   bindings
     = <&kp LPAR &kp D &kp E &kp F &kp N>
-    , <&kp SPC &kp SPC
+    , <&kp SPC &kp SPC>
     , <&kp LBKT &kp RBKT &kp RPAR>
     , <&kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
 };
