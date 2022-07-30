@@ -37,13 +37,13 @@
       };       
       combo_nav_mid {
         timeout-ms = <50>;
-        key-positions = <3 4>;
+        key-positions = <13 14>;
         bindings = <&switch_win>;
         layers = <1>;
       };       
       combo_nav_bot {
         timeout-ms = <50>;
-        key-positions = <3 4>;
+        key-positions = <23 24>;
         bindings = <&close_tab>;
         layers = <1>;
       };       
