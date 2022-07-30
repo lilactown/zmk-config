@@ -88,10 +88,13 @@
         acceleration-exponent=<1>;
         time-to-max-speed-ms = <0>;
       };
+      copy: copy {
+        bindings = <&kp LG(C)>;
+      };
     };
 
     macros {
-      copy: copy {
+      /* copy: copy {
         label = "ZM_macro_copy";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
@@ -102,7 +105,7 @@
            , <&macro_tap &kp C>
            , <&macro_release &kp LGUI>
            ;
-      };
+      }; */
       cut: cut {
         label = "ZM_macro_cut";
         compatible = "zmk,behavior-macro";
