@@ -68,6 +68,14 @@
         bindings = <&clj_let>;
         layers = <2>;
       };
+
+      // num layer
+      combo_num_bot {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&bt BT_CLR>;
+        layers = <3>;
+      };
     };
     behaviors {
       mmv {
@@ -248,7 +256,7 @@
 // | spcl | spcr |     | vldn | vlup |   | cmdk | pdwn | pgup | swpl | entr |
 //                     |      |      |   | lclk |  num |
                         bindings = <
-   &kp TAB     &switch_app  &none     &tab_left    &tab_right       &mmv MOVE_HOR(-1200) &mmv MOVE_VERT(1200) &mmv MOVE_VERT(-1200) &mmv MOVE_HOR(1200) &mkp RCLK
+   &kp TAB     &switch_app  &none     &tab_left    &tab_right       &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &mkp RCLK
    &sk LCTL    &sk LALT     &sk LGUI  &sk LSFT     &none            &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp BSPC
    &space_left &space_right &none     &kp C_VOL_DN &kp C_VOL_UP     &kp RG(K)            &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none               &kp RET
                                                   &trans &trans     &mkp LCLK &mo 3
@@ -280,7 +288,7 @@
                         bindings = <
    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
    &sk LCTL     &sk LALT     &sk LGUI     &sk LSFT     &none            &none  &sk RSFT &sk RGUI &sk RALT &sk RCTL
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none  &none    &none    &none    &bt BT_CLR
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none  &none    &none    &none    &none
                                                       &trans &trans     &trans &trans
                       >;
                 };
