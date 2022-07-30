@@ -29,6 +29,25 @@
       };
 
       // nav layer
+      combo_nav_top {
+        timeout-ms = <50>;
+        key-positions = <3 4>;
+        bindings = <&new_tab>;
+        layers = <1>;
+      };       
+      combo_nav_mid {
+        timeout-ms = <50>;
+        key-positions = <3 4>;
+        bindings = <&switch_win>;
+        layers = <1>;
+      };       
+      combo_nav_bot {
+        timeout-ms = <50>;
+        key-positions = <3 4>;
+        bindings = <&close_tab>;
+        layers = <1>;
+      };       
+
 
       // symbol layer
       combo_sym_top {
@@ -231,7 +250,7 @@
                         bindings = <
    &kp TAB     &switch_app  &tab_left &tab_right  &kp C_VOL_UP     &mmv MOVE_HOR(-1200) &mmv MOVE_VERT(1200) &mmv MOVE_VERT(-1200) &mmv MOVE_HOR(1200) &mkp RCLK
    &sk LCTL    &sk LALT     &sk LGUI  &sk LSFT    &kp C_VOL_DN     &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp BSPC
-   &space_left &space_right &none     &switch_win &kp C_PP         &none                &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none               &kp RET
+   &space_left &space_right &none     &none       &kp C_PP         &none                &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none               &kp RET
                                                  &trans &trans     &mkp LCLK &sl 3
                       >;
                 sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
