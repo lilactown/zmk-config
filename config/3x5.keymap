@@ -29,24 +29,30 @@
       };
 
       // nav layer
-      combo_nav_top {
+      combo_nav_hpoint_top {
         timeout-ms = <50>;
         key-positions = <3 4>;
         bindings = <&kp LG(T)>; // new tab
         layers = <1>;
       };       
-      combo_nav_mid {
+      combo_nav_hpoint_mid {
         timeout-ms = <50>;
         key-positions = <13 14>;
         bindings = <&kp LG(GRAVE)>; // switch win
         layers = <1>;
       };       
-      combo_nav_bot {
+      combo_nav_hpoint_bot {
         timeout-ms = <50>;
         key-positions = <23 24>;
+        bindings = <&kp LG(N)>; // new win
+        layers = <1>;
+      };
+      combo_nav_vmid_top {
+        timeout-ms = <50>;
+        key-positions = <2 12>;
         bindings = <&kp LG(W)>; // close win
         layers = <1>;
-      };       
+      };
 
 
       // symbol layer
