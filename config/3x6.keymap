@@ -55,13 +55,13 @@
       combo_nav_vpoint0_top {
         timeout-ms = <50>;
         key-positions = <4 16>;
-        bindings = <&kp LG(0)>; // first tab
+        bindings = <&kp LG(N0)>; // first tab
         layers = <1>;
       };
       combo_nav_vpoint1_top {
         timeout-ms = <50>;
         key-positions = <5 17>;
-        bindings = <&kp LG(9)>; // last tab
+        bindings = <&kp LG(N9)>; // last tab
         layers = <1>;
       };
 
