@@ -4,6 +4,84 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    combos {
+      // default layer
+      compatible = "zmk,combos";
+       combo_default_top {
+        timeout-ms = <50>;
+        key-positions = <3 4>;
+        bindings = <&kp LG(V)>; // paste
+        layers = <0>;
+      };
+      combo_default_mid {
+        timeout-ms = <50>;
+        key-positions = <13 14>;
+        bindings = <&kp LG(C)>; // copy
+        layers = <0>;
+      };
+      combo_default_bot {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&kp LG(X)>; // cut
+        layers = <0>;
+      };
+
+      // nav layer
+      combo_nav_hpoint_top {
+        timeout-ms = <50>;
+        key-positions = <3 4>;
+        bindings = <&kp LG(T)>; // new tab
+        layers = <1>;
+      };
+      combo_nav_hpoint_mid {
+        timeout-ms = <50>;
+        key-positions = <13 14>;
+        bindings = <&kp LG(GRAVE)>; // switch win
+        layers = <1>;
+      };
+      combo_nav_hpoint_bot {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&kp LG(N)>; // new win
+        layers = <1>;
+      };
+      combo_nav_vmid_top {
+        timeout-ms = <50>;
+        key-positions = <2 12>;
+        bindings = <&kp LG(W)>; // close win
+        layers = <1>;
+      };
+
+
+      // symbol layer
+      combo_sym_top {
+        timeout-ms = <50>;
+        key-positions = <3 4>;
+        bindings = <&clj_defn>;
+        layers = <2>;
+      };
+      combo_sym_mid {
+        timeout-ms = <50>;
+        key-positions = <13 14>;
+        bindings = <&clj_fn>;
+        layers = <2>;
+      };
+      combo_sym_bot {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&clj_let>;
+        layers = <2>;
+      };
+
+      // num layer
+      combo_num_bot {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&bt BT_CLR>;
+        layers = <3>;
+      };
+    }
+ 
     behaviors {
       mmv {
         delay-ms = <0>;
@@ -18,80 +96,7 @@
     };
 
     macros {
-      switch_app: switch_app {
-        label = "ZM_switch_app";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings
-           = <&macro_press &kp LGUI>
-           , <&macro_tap &kp TAB>
-           , <&macro_release &kp LGUI>
-           ;
-      };
-      space_left: space_left {
-        label = "ZM_space_left";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings
-           = <&macro_press &kp LCTL>
-           , <&macro_tap &kp LEFT>
-           , <&macro_release &kp LCTL>
-           ;
-      };
-      space_right: space_right {
-        label = "ZM_space_right";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings
-           = <&macro_press &kp LCTL>
-           , <&macro_tap &kp RIGHT>
-           , <&macro_release &kp LCTL>
-           ;
-      };
-      switch_win: switch_win {
-        label = "ZM_switch_win";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings
-          = <&macro_press &kp LGUI>
-          , <&macro_tap &kp GRAVE>
-          , <&macro_release &kp LGUI>
-          ;
-      };
-      tab_left: tab_left {
-        label = "ZM_tab_left";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings
-           = <&macro_press &kp LCTL>
-           , <&macro_press &kp LSFT>
-           , <&macro_tap &kp TAB>
-           , <&macro_release &kp LSFT>
-           , <&macro_release &kp LCTL>
-           ;
-      };
-      tab_right: tab_right {
-        label = "ZM_tab_right";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings
-           = <&macro_press &kp LCTL>
-           , <&macro_tap &kp TAB>
-           , <&macro_release &kp LCTL>
-           ;
-      };
+    };
        
     };
 
@@ -125,9 +130,9 @@
 // |    | spcl | spcr | back | swin | play |   |      | pdwn | pgup | swpl | entr |    |
 //                           |      |      |   | lclk |  num |
                         bindings = <
-   &none &kp TAB     &switch_app  &tab_left &tab_right  &kp C_VOL_UP     &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT &mkp RCLK &none
-   &none &sk LCTL    &sk LALT     &sk LGUI  &sk LSFT    &kp C_VOL_DN     &kp LEFT       &kp DOWN         &kp UP         &kp RIGHT       &kp BSPC  &none
-   &none &space_left &space_right &none     &switch_win &kp C_PP         &none          &mwh SCROLL_DOWN &mwh SCROLL_UP &none           &kp RET   &none
+   &none &kp TAB      &kp LG(TAB)   &none    &kp LS(LC(TAB)) &kp LC(TAB)      &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &mkp RCLK &none
+   &none &sk LCTL     &sk LALT      &sk LGUI &sk LSFT        &none            &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp BSPC  &none
+   &none &kp LC(LEFT) &kp LC(RIGHT) &none    &kp C_VOL_DN    &kp C_VOL_UP     &kp RG(K)            &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none               &kp RET   &none
    #ifdef FIVETHUMBS
                                                 &none &trans &mkp LCLK &mo 3 &none
    #else
@@ -165,7 +170,7 @@
                         bindings = <
    &none &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6     &kp N7   &kp N8   &kp N9   &kp N0   &none
    &none &sk LCTL     &sk LALT     &sk LGUI     &sk LSFT     &none            &none      &sk RSFT &sk RGUI &sk RALT &sk RCTL &none
-   &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &bt BT_CLR &none    &none    &none    &none    &none
+   &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none &none    &none    &none    &none    &none
    #ifdef FIVETHUMBS
                                                           &none &trans &sk RSFT &trans &none
    #else
