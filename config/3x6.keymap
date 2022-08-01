@@ -80,7 +80,7 @@
         bindings = <&bt BT_CLR>;
         layers = <3>;
       };
-    }
+    };
  
     behaviors {
       mmv {
@@ -96,8 +96,7 @@
     };
 
     macros {
-    };
-       
+      
     };
 
         keymap {
