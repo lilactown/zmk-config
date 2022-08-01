@@ -16,13 +16,13 @@
       };
       combo_default_mid {
         timeout-ms = <50>;
-        key-positions = <14 15>;
+        key-positions = <16 17>;
         bindings = <&kp LG(C)>; // copy
         layers = <0>;
       };
       combo_default_bot {
         timeout-ms = <50>;
-        key-positions = <24 25>;
+        key-positions = <28 29>;
         bindings = <&kp LG(X)>; // cut
         layers = <0>;
       };
@@ -36,19 +36,19 @@
       };
       combo_nav_hpoint_mid {
         timeout-ms = <50>;
-        key-positions = <14 15>;
+        key-positions = <16 17>;
         bindings = <&kp LG(GRAVE)>; // switch win
         layers = <1>;
       };
       combo_nav_hpoint_bot {
         timeout-ms = <50>;
-        key-positions = <24 25>;
+        key-positions = <28 29>;
         bindings = <&kp LG(N)>; // new win
         layers = <1>;
       };
       combo_nav_vmid_top {
         timeout-ms = <50>;
-        key-positions = <3 13>;
+        key-positions = <3 15>;
         bindings = <&kp LG(W)>; // close win
         layers = <1>;
       };
@@ -63,13 +63,13 @@
       };
       combo_sym_mid {
         timeout-ms = <50>;
-        key-positions = <14 15>;
+        key-positions = <16 17>;
         bindings = <&clj_fn>;
         layers = <2>;
       };
       combo_sym_bot {
         timeout-ms = <50>;
-        key-positions = <24 25>;
+        key-positions = <28 29>;
         bindings = <&clj_let>;
         layers = <2>;
       };
@@ -77,7 +77,7 @@
       // num layer
       combo_num_bot {
         timeout-ms = <50>;
-        key-positions = <24 25>;
+        key-positions = <28 29>;
         bindings = <&bt BT_CLR>;
         layers = <3>;
       };
@@ -170,7 +170,7 @@
                         bindings = <
    &none &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6     &kp N7   &kp N8   &kp N9   &kp N0   &none
    &none &sk LCTL     &sk LALT     &sk LGUI     &sk LSFT     &none            &none      &sk RSFT &sk RGUI &sk RALT &sk RCTL &none
-   &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none &none    &none    &none    &none    &none
+   &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none      &none    &none    &none    &none    &none
    #ifdef FIVETHUMBS
                                                           &none &trans &sk RSFT &trans &none
    #else
