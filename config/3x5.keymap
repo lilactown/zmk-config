@@ -53,6 +53,18 @@
         bindings = <&kp LG(W)>; // close win
         layers = <1>;
       };
+      combo_nav_vpoint0_top {
+        timeout-ms = <50>;
+        key-positions = <3 13>;
+        bindings = <&kp LG(0)>; // first tab
+        layers = <1>;
+      };
+      combo_nav_vpoint1_top {
+        timeout-ms = <50>;
+        key-positions = <4 14>;
+        bindings = <&kp LG(9)>; // last tab
+        layers = <1>;
+      };
 
 
       // symbol layer
@@ -125,7 +137,7 @@
 // | spcl | spcr |     | vldn | vlup |   | cmdk | pdwn | pgup | swpl | entr |
 //                     |      |      |   | lclk |  num |
                         bindings = <
-   &kp TAB      &kp LG(TAB)   &none     &kp LS(LC(TAB)) &kp LC(TAB)       &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &mkp RCLK
+   &kp TAB      &kp LG(TAB)   &none     &kp LS(LC(TAB)) &kp LC(TAB)      &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &mkp RCLK
    &sk LCTL     &sk LALT      &sk LGUI  &sk LSFT        &none            &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp BSPC
    &kp LC(LEFT) &kp LC(RIGHT) &none     &kp C_VOL_DN    &kp C_VOL_UP     &kp RG(K)            &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none               &kp RET
                                                        &trans &trans     &mkp LCLK &mo 3
