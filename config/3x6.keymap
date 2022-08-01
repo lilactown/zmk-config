@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    #include "clojure.dtsi"
     combos {
       // default layer
       compatible = "zmk,combos";
