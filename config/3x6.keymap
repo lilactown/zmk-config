@@ -10,19 +10,19 @@
       compatible = "zmk,combos";
        combo_default_top {
         timeout-ms = <50>;
-        key-positions = <3 4>;
+        key-positions = <4 5>;
         bindings = <&kp LG(V)>; // paste
         layers = <0>;
       };
       combo_default_mid {
         timeout-ms = <50>;
-        key-positions = <13 14>;
+        key-positions = <14 15>;
         bindings = <&kp LG(C)>; // copy
         layers = <0>;
       };
       combo_default_bot {
         timeout-ms = <50>;
-        key-positions = <23 24>;
+        key-positions = <24 25>;
         bindings = <&kp LG(X)>; // cut
         layers = <0>;
       };
@@ -30,25 +30,25 @@
       // nav layer
       combo_nav_hpoint_top {
         timeout-ms = <50>;
-        key-positions = <3 4>;
+        key-positions = <4 5>;
         bindings = <&kp LG(T)>; // new tab
         layers = <1>;
       };
       combo_nav_hpoint_mid {
         timeout-ms = <50>;
-        key-positions = <13 14>;
+        key-positions = <14 15>;
         bindings = <&kp LG(GRAVE)>; // switch win
         layers = <1>;
       };
       combo_nav_hpoint_bot {
         timeout-ms = <50>;
-        key-positions = <23 24>;
+        key-positions = <24 25>;
         bindings = <&kp LG(N)>; // new win
         layers = <1>;
       };
       combo_nav_vmid_top {
         timeout-ms = <50>;
-        key-positions = <2 12>;
+        key-positions = <3 13>;
         bindings = <&kp LG(W)>; // close win
         layers = <1>;
       };
@@ -57,19 +57,19 @@
       // symbol layer
       combo_sym_top {
         timeout-ms = <50>;
-        key-positions = <3 4>;
+        key-positions = <4 5>;
         bindings = <&clj_defn>;
         layers = <2>;
       };
       combo_sym_mid {
         timeout-ms = <50>;
-        key-positions = <13 14>;
+        key-positions = <14 15>;
         bindings = <&clj_fn>;
         layers = <2>;
       };
       combo_sym_bot {
         timeout-ms = <50>;
-        key-positions = <23 24>;
+        key-positions = <24 25>;
         bindings = <&clj_let>;
         layers = <2>;
       };
@@ -77,7 +77,7 @@
       // num layer
       combo_num_bot {
         timeout-ms = <50>;
-        key-positions = <23 24>;
+        key-positions = <24 25>;
         bindings = <&bt BT_CLR>;
         layers = <3>;
       };
