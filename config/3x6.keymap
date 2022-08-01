@@ -55,7 +55,7 @@
       combo_nav_vpoint0_top {
         timeout-ms = <50>;
         key-positions = <4 16>;
-        bindings = <&kp LG(N0)>; // first tab
+        bindings = <&kp LG(N1)>; // first tab
         layers = <1>;
       };
       combo_nav_vpoint1_top {
