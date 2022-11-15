@@ -9,6 +9,21 @@
    combos {
       // default layer
       compatible = "zmk,combos";
+       combo_default_left_pinky {
+        timeout-ms = <50>;
+        key-positions = <10 20>;
+        bindings = <&kp Z>;
+        layers = <0>;
+      };
+      combo_default_right_pinky {
+        timeout-ms = <50>;
+        key-positions = <19 29>;
+        bindings = <&kp SQT>;
+        layers = <0>;
+      };
+
+
+      compatible = "zmk,combos";
        combo_default_top {
         timeout-ms = <50>;
         key-positions = <3 4>;
@@ -29,6 +44,22 @@
       };
 
       // nav layer
+      compatible = "zmk,combos";
+       combo_nav_left_pinky {
+        timeout-ms = <50>;
+        key-positions = <10 20>;
+        bindings = <&kp LC(LEFT)>;
+        layers = <1>;
+      };
+      compatible = "zmk,combos";
+       combo_nav_right_pinky {
+        timeout-ms = <50>;
+        key-positions = <19 29>;
+        bindings = <&mkp RCLK>;
+        layers = <1>;
+      };
+
+
       combo_nav_hpoint_top {
         timeout-ms = <50>;
         key-positions = <3 4>;
@@ -68,6 +99,22 @@
 
 
       // symbol layer
+      compatible = "zmk,combos";
+       combo_sym_left_pinky {
+        timeout-ms = <50>;
+        key-positions = <10 20>;
+        bindings = <&kp PLUS>;
+        layers = <2>;
+      };
+      compatible = "zmk,combos";
+       combo_sym_right_pinky {
+        timeout-ms = <50>;
+        key-positions = <19 29>;
+        bindings = <&kp GRAVE>;
+        layers = <2>;
+      };
+
+
       combo_sym_top {
         timeout-ms = <50>;
         key-positions = <3 4>;
@@ -88,6 +135,21 @@
       };
 
       // num layer
+      compatible = "zmk,combos";
+       combo_num_left_pinky {
+        timeout-ms = <50>;
+        key-positions = <10 20>;
+        bindings = <&bt BT_SEL 0>;
+        layers = <3>;
+      };
+      // compatible = "zmk,combos";
+      //  combo_num_right_pinky {
+      //   timeout-ms = <50>;
+      //   key-positions = <19 29>;
+      //   bindings = <&kp GRAVE>;
+      //   layers = <3>;
+      // };
+
       combo_num_bot {
         timeout-ms = <50>;
         key-positions = <23 24>;
