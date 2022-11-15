@@ -9,15 +9,15 @@
    combos {
       // default layer
       compatible = "zmk,combos";
-       combo_default_left_pinky {
+       combo_default_left_vpointer {
         timeout-ms = <50>;
-        key-positions = <0 10>;
+        key-positions = <4 14>;
         bindings = <&kp Z>;
         layers = <0>;
       };
-      combo_default_right_pinky {
+      combo_default_right_vpointer {
         timeout-ms = <50>;
-        key-positions = <9 19>;
+        key-positions = <6 16>;
         bindings = <&kp SCLN>;
         layers = <0>;
       };
@@ -239,7 +239,7 @@
                         bindings = <
    &kp TAB      &kp LG(TAB)   &none     &kp LS(LC(TAB)) &kp LC(TAB)      &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &kp BSPC
    &sk LCTL     &sk LALT      &sk LGUI  &sk LSFT        &none            &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp RET
-   &kp LC(LEFT) &kp LC(RIGHT) &none     &kp C_VOL_DN    &kp C_VOL_UP     &kp RG(K)            &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none               &mkp RCLK
+   &kp LC(LEFT) &kp LC(RIGHT) &none     &kp C_VOL_DN    &kp C_VOL_UP     &kp RG(K)            &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none               &none
                                                        &trans &trans     &mkp LCLK &mo 3
                       >;
                 sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
