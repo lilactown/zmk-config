@@ -56,26 +56,6 @@
       };
 
 
-      // combo_default_right_top {
-      //   timeout-ms = <50>;
-      //   key-positions = <5 6>;
-      //   bindings = <&kp LG(V)>; // paste
-      //   layers = <0>;
-      // };
-      combo_default_right_mid {
-        timeout-ms = <50>;
-        key-positions = <15 16>;
-        bindings = <&kp Z>;
-        layers = <0>;
-      };
-      combo_default_right_bot {
-        timeout-ms = <50>;
-        key-positions = <25 26>;
-        bindings = <&kp SCLN>;
-        layers = <0>;
-      };
-
-
       // nav layer
       combo_default_right_vpointer_bot {
         timeout-ms = <50>;
