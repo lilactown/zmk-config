@@ -150,7 +150,6 @@
         bindings = <&kp EXCL>;
         layers = <2>;
       };
-     }
 
 
       // num layer
