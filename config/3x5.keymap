@@ -56,8 +56,7 @@
       };
 
 
-      // compatible = "zmk,combos";
-      //  combo_default_right_top {
+      // combo_default_right_top {
       //   timeout-ms = <50>;
       //   key-positions = <5 6>;
       //   bindings = <&kp LG(V)>; // paste
@@ -159,13 +158,6 @@
         bindings = <&bt BT_SEL 0>;
         layers = <3>;
       };
-      // compatible = "zmk,combos";
-      //  combo_num_right_pinky {
-      //   timeout-ms = <50>;
-      //   key-positions = <9 19>;
-      //   bindings = <&kp GRAVE>;
-      //   layers = <3>;
-      // };
 
       combo_num_bot {
         timeout-ms = <50>;
