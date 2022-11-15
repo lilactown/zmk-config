@@ -143,12 +143,28 @@
         layers = <2>;
       };
       compatible = "zmk,combos";
+       combo_sym_left_vpointer_bot {
+        timeout-ms = <50>;
+        key-positions = <13 23>;
+        bindings = <&kp PRCNT>;
+        layers = <2>;
+      };
+
+      compatible = "zmk,combos";
        combo_sym_right_vpointer {
         timeout-ms = <50>;
         key-positions = <6 16>;
         bindings = <&kp EXCL>;
         layers = <2>;
       };
+      // compatible = "zmk,combos";
+      //  combo_sym_right_vpointer_bot {
+      //   timeout-ms = <50>;
+      //   key-positions = <16 26>;
+      //   bindings = <&kp EXCL>;
+      //   layers = <2>;
+      // };
+
 
 
       combo_sym_top {
