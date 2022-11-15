@@ -122,16 +122,16 @@
 
       // symbol layer
       compatible = "zmk,combos";
-       combo_sym_left_pinky {
+       combo_sym_left_vpointer {
         timeout-ms = <50>;
-        key-positions = <0 10>;
+        key-positions = <4 14>;
         bindings = <&kp PLUS>;
         layers = <2>;
       };
       compatible = "zmk,combos";
-       combo_sym_right_pinky {
+       combo_sym_right_vpointer {
         timeout-ms = <50>;
-        key-positions = <9 19>;
+        key-positions = <6 16>;
         bindings = <&kp EXCL>;
         layers = <2>;
       };
