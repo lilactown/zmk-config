@@ -9,14 +9,13 @@
    combos {
       // default layer
       compatible = "zmk,combos";
-       combo_default_left_vpointer {
+      combo_default_left_vpointer {
         timeout-ms = <50>;
         key-positions = <3 13>;
         bindings = <&kp Z>;
         layers = <0>;
       };
-      compatible = "zmk,combos";
-       combo_default_left_vpointer_bot {
+      combo_default_left_vpointer_bot {
         timeout-ms = <50>;
         key-positions = <13 23>;
         bindings = <&kp V>;
@@ -37,8 +36,7 @@
       };
 
 
-      compatible = "zmk,combos";
-       combo_default_left_top {
+      combo_default_left_top {
         timeout-ms = <50>;
         key-positions = <3 4>;
         bindings = <&kp LG(V)>; // paste
@@ -80,15 +78,13 @@
 
 
       // nav layer
-      compatible = "zmk,combos";
-       combo_nav_left_pinky {
+      combo_nav_left_pinky {
         timeout-ms = <50>;
         key-positions = <0 10>;
         bindings = <&kp LC(LEFT)>;
         layers = <1>;
       };
-      compatible = "zmk,combos";
-       combo_nav_right_pinky {
+      combo_nav_right_pinky {
         timeout-ms = <50>;
         key-positions = <9 19>;
         bindings = <&kp RET>;
@@ -135,33 +131,30 @@
 
 
       // symbol layer
-      compatible = "zmk,combos";
-       combo_sym_left_vpointer {
+      combo_sym_left_vpointer {
         timeout-ms = <50>;
         key-positions = <3 13>;
         bindings = <&kp PLUS>;
         layers = <2>;
       };
-      compatible = "zmk,combos";
-       combo_sym_left_vpointer_bot {
+      combo_sym_left_vpointer_bot {
         timeout-ms = <50>;
         key-positions = <13 23>;
         bindings = <&kp PRCNT>;
         layers = <2>;
       };
 
-      compatible = "zmk,combos";
-       combo_sym_right_vpointer {
+      combo_sym_right_vpointer {
         timeout-ms = <50>;
         key-positions = <6 16>;
         bindings = <&kp EXCL>;
         layers = <2>;
       };
+     }
 
 
       // num layer
-      compatible = "zmk,combos";
-       combo_num_left_pinky {
+      combo_num_left_pinky {
         timeout-ms = <50>;
         key-positions = <0 10>;
         bindings = <&bt BT_SEL 0>;
@@ -219,9 +212,9 @@
 
                 nav {
 // ---------------------------------------------------------------------------
-// |  tab | sapp |     | tabl | tabr |   | mlft | mdwn |  mup | mrgt | rclk |
-// | ctrl |  alt | cmd | shft |      |   | left | down |   up | rght | bspc |
-// | spcl | spcr |     | vldn | vlup |   | cmdk | pdwn | pgup | swpl | entr |
+// |  tab | sapp |     | tabl | tabr |   | mlft | mdwn |  mup | mrgt | bspc |
+// | ctrl |  alt | cmd | shft |      |   | left | down |   up | rght | entr |
+// | spcl | spcr |     | vldn | vlup |   | cmdk | pdwn | pgup | swpl |      |
 //                     |      |      |   | lclk |  num |
                         bindings = <
    &kp TAB      &kp LG(TAB)   &none     &kp LS(LC(TAB)) &kp LC(TAB)      &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &kp BSPC
