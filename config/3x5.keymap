@@ -157,49 +157,6 @@
         bindings = <&kp EXCL>;
         layers = <2>;
       };
-      // compatible = "zmk,combos";
-      //  combo_sym_right_vpointer_bot {
-      //   timeout-ms = <50>;
-      //   key-positions = <16 26>;
-      //   bindings = <&kp EXCL>;
-      //   layers = <2>;
-      // };
-
-
-
-      combo_sym_top {
-        timeout-ms = <50>;
-        key-positions = <3 4>;
-        bindings = <&clj_defn>;
-        layers = <2>;
-      };
-      combo_sym_mid {
-        timeout-ms = <50>;
-        key-positions = <13 14>;
-        bindings = <&clj_fn>;
-        layers = <2>;
-      };
-      combo_sym_bot {
-        timeout-ms = <50>;
-        key-positions = <23 24>;
-        bindings = <&clj_let>;
-        layers = <2>;
-      };
-
-
-
-      combo_sym_right_mid {
-        timeout-ms = <50>;
-        key-positions = <15 16>;
-        bindings = <&kp PLUS>;
-        layers = <2>;
-      };
-      combo_sym_right_bot {
-        timeout-ms = <50>;
-        key-positions = <25 26>;
-        bindings = <&kp EXCL>;
-        layers = <2>;
-      };
 
 
       // num layer
