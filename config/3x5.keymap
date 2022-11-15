@@ -24,24 +24,46 @@
 
 
       compatible = "zmk,combos";
-       combo_default_top {
+       combo_default_left_top {
         timeout-ms = <50>;
         key-positions = <3 4>;
         bindings = <&kp LG(V)>; // paste
         layers = <0>;
       };
-      combo_default_mid {
+      combo_default_left_mid {
         timeout-ms = <50>;
         key-positions = <13 14>;
         bindings = <&kp LG(C)>; // copy
         layers = <0>;
       };
-      combo_default_bot {
+      combo_default_left_bot {
         timeout-ms = <50>;
         key-positions = <23 24>;
         bindings = <&kp LG(X)>; // cut
         layers = <0>;
       };
+
+
+      // compatible = "zmk,combos";
+      //  combo_default_right_top {
+      //   timeout-ms = <50>;
+      //   key-positions = <5 6>;
+      //   bindings = <&kp LG(V)>; // paste
+      //   layers = <0>;
+      // };
+      combo_default_right_mid {
+        timeout-ms = <50>;
+        key-positions = <15 16>;
+        bindings = <&kp Z>;
+        layers = <0>;
+      };
+      combo_default_right_bot {
+        timeout-ms = <50>;
+        key-positions = <25 26>;
+        bindings = <&kp SCLN>;
+        layers = <0>;
+      };
+
 
       // nav layer
       compatible = "zmk,combos";
@@ -133,6 +155,22 @@
         bindings = <&clj_let>;
         layers = <2>;
       };
+
+
+
+      combo_sym_right_mid {
+        timeout-ms = <50>;
+        key-positions = <15 16>;
+        bindings = <&kp PLUS>;
+        layers = <2>;
+      };
+      combo_sym_right_bot {
+        timeout-ms = <50>;
+        key-positions = <25 26>;
+        bindings = <&kp EXCL>;
+        layers = <2>;
+      };
+
 
       // num layer
       compatible = "zmk,combos";
