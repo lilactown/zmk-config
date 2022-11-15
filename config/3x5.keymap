@@ -11,14 +11,14 @@
       compatible = "zmk,combos";
        combo_default_left_pinky {
         timeout-ms = <50>;
-        key-positions = <10 20>;
+        key-positions = <0 10>;
         bindings = <&kp Z>;
         layers = <0>;
       };
       combo_default_right_pinky {
         timeout-ms = <50>;
         key-positions = <19 29>;
-        bindings = <&kp SQT>;
+        bindings = <&kp SCLN>;
         layers = <0>;
       };
 
@@ -47,15 +47,15 @@
       compatible = "zmk,combos";
        combo_nav_left_pinky {
         timeout-ms = <50>;
-        key-positions = <10 20>;
+        key-positions = <0 10>;
         bindings = <&kp LC(LEFT)>;
         layers = <1>;
       };
       compatible = "zmk,combos";
        combo_nav_right_pinky {
         timeout-ms = <50>;
-        key-positions = <19 29>;
-        bindings = <&mkp RCLK>;
+        key-positions = <9 19>;
+        bindings = <&kp RET>;
         layers = <1>;
       };
 
@@ -102,15 +102,15 @@
       compatible = "zmk,combos";
        combo_sym_left_pinky {
         timeout-ms = <50>;
-        key-positions = <10 20>;
+        key-positions = <0 10>;
         bindings = <&kp PLUS>;
         layers = <2>;
       };
       compatible = "zmk,combos";
        combo_sym_right_pinky {
         timeout-ms = <50>;
-        key-positions = <19 29>;
-        bindings = <&kp GRAVE>;
+        key-positions = <9 19>;
+        bindings = <&kp EXCL>;
         layers = <2>;
       };
 
@@ -138,14 +138,14 @@
       compatible = "zmk,combos";
        combo_num_left_pinky {
         timeout-ms = <50>;
-        key-positions = <10 20>;
+        key-positions = <0 10>;
         bindings = <&bt BT_SEL 0>;
         layers = <3>;
       };
       // compatible = "zmk,combos";
       //  combo_num_right_pinky {
       //   timeout-ms = <50>;
-      //   key-positions = <19 29>;
+      //   key-positions = <9 19>;
       //   bindings = <&kp GRAVE>;
       //   layers = <3>;
       // };
