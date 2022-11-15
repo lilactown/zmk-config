@@ -11,7 +11,7 @@
       compatible = "zmk,combos";
        combo_default_left_vpointer {
         timeout-ms = <50>;
-        key-positions = <4 14>;
+        key-positions = <3 13>;
         bindings = <&kp Z>;
         layers = <0>;
       };
@@ -124,7 +124,7 @@
       compatible = "zmk,combos";
        combo_sym_left_vpointer {
         timeout-ms = <50>;
-        key-positions = <4 14>;
+        key-positions = <3 13>;
         bindings = <&kp PLUS>;
         layers = <2>;
       };
