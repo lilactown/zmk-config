@@ -17,7 +17,7 @@
       };
       combo_default_right_pinky {
         timeout-ms = <50>;
-        key-positions = <19 29>;
+        key-positions = <9 19>;
         bindings = <&kp SCLN>;
         layers = <0>;
       };
