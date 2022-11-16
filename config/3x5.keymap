@@ -12,13 +12,13 @@
       combo_default_left_vpointer {
         timeout-ms = <50>;
         key-positions = <3 13>;
-        bindings = <&kp Z>;
+        bindings = <&kp COMMA>;
         layers = <0>;
       };
       combo_default_left_vpointer_bot {
         timeout-ms = <50>;
         key-positions = <13 23>;
-        bindings = <&kp V>;
+        bindings = <&kp DOT>;
         layers = <0>;
       };
 
@@ -31,7 +31,7 @@
       combo_default_right_vpointer_bot {
         timeout-ms = <50>;
         key-positions = <16 26>;
-        bindings = <&kp K>;
+        bindings = <&kp SQT>;
         layers = <0>;
       };
 
@@ -175,14 +175,14 @@
 
                 default {
 // -----------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  '  |
+// |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  Z  |
 // |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |
-// |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  ;  |
+// |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  V  |  K  |  ;  |
 //                   | nav | spc |   | sft | sym |
                         bindings = <
-   OUTER &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U      &kp Y   &kp SQT  OUTER
-   OUTER &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E      &kp I   &kp O    OUTER
-   OUTER &kp Z &kp X &kp C &kp D &kp V     &kp K &kp H &kp COMMA  &kp DOT &kp SCLN OUTER
+   OUTER &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U &kp Y &kp Z OUTER
+   OUTER &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E &kp I &kp O OUTER
+   OUTER &kp Z &kp X &kp C &kp D &kp V     &kp K &kp H &kp V &kp K &kp SCLN OUTER
                    &mo 1 &kp SPC     &kp RSFT &mo 2
                    >;
                 sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
