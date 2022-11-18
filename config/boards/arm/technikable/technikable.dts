@@ -78,7 +78,7 @@
 	>;
 	};
 
-        3x5_2: 3x5_2 {
+        split_3x5_2: split_3x5_2 {
 		compatible = "zmk,matrix-transform";
 		rows = <4>;
 		columns = <12>;
