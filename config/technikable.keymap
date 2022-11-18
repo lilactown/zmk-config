@@ -1,4 +1,4 @@
-
+#define OUTER
 #include "3x5.keymap"
 
 / {
