@@ -3,6 +3,6 @@
 
 / {
     chosen {
-      zmk,matrix_transform = split_3x5_2;
+      zmk,matrix_transform = &split_3x5_2;
     };
 };
