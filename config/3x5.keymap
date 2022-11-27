@@ -238,7 +238,7 @@
    &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U      &kp Y   &kp SQT  OUTER
    &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E      &kp I   &kp O    OUTER
    &kp Z &kp X &kp C &kp D &kp V     &kp K &kp H &kp COMMA  &kp DOT &kp SCLN OUTER
-                   &mo 5 &kp SPC     &kp RSFT &mo 2
+                   &mo 5 &kp SPC     &kp RSFT &tog 4
                       >;
                 };
                 game_num {
