@@ -84,13 +84,13 @@
         key-positions = <3 4>;
         bindings = <&kp LG(T)>; // new tab
         layers = <1>;
-      };       
+      };
       combo_nav_hpoint_mid {
         timeout-ms = <50>;
         key-positions = <13 14>;
         bindings = <&kp LG(GRAVE)>; // switch win
         layers = <1>;
-      };       
+      };
       combo_nav_hpoint_bot {
         timeout-ms = <50>;
         key-positions = <23 24>;
@@ -226,11 +226,29 @@
 // | bt0 | bt1 | bt2 | bt3 | bt4 |   | btclr |     |     |     |     |
 //                   |     |     |   |       |     |
                         bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
-   &sk LCTL     &sk LALT     &sk LGUI     &sk LSFT     &none            &none  &sk RSFT &sk RGUI &sk RALT &sk RCTL
+   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp    N6 &kp N7   &kp N8   &kp N9   &kp N0
+   &sk LCTL     &sk LALT     &sk LGUI     &sk LSFT     &none            &tog 4 &sk RSFT &sk RGUI &sk RALT &sk RCTL
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none  &none    &none    &none    &none
                                                       &trans &trans     &trans &trans
                       >;
                 };
+
+                game_default {
+                        bindings = <
+   &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U      &kp Y   &kp SQT  OUTER
+   &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E      &kp I   &kp O    OUTER
+   &kp Z &kp X &kp C &kp D &kp V     &kp K &kp H &kp COMMA  &kp DOT &kp SCLN OUTER
+                   &mo 5 &kp SPC     &kp RSFT &mo 2
+                      >;
+                };
+                game_num {
+                        bindings = <
+   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5        &kp J &kp L &kp U      &kp Y   &kp SQT  OUTER
+   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0        &kp M &kp N &kp E      &kp I   &kp O    OUTER
+   &kp Z  &kp X  &kp C  &kp D  &kp LSHFT     &kp K &kp H &kp COMMA  &kp DOT &kp SCLN OUTER
+                           &trans &trans     &kp RSFT &mo 2
+                      >;
+                };
+
         };
 };
