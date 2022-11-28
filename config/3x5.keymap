@@ -243,9 +243,9 @@
                 };
                 game_num {
                         bindings = <
-   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5        &kp J &kp L &kp U      &kp Y   &kp SQT  OUTER
-   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0        &kp M &kp N &kp E      &kp I   &kp O    OUTER
-   &kp Z  &kp X  &kp C  &kp D  &kp LSHFT     &kp K &kp H &kp COMMA  &kp DOT &kp SCLN OUTER
+   &kp TAB  &kp N1 &kp N2 &kp N3 &kp N0     &kp J &kp L &kp U      &kp Y   &kp SQT  OUTER
+   &kp ESC  &kp N4 &kp N5 &kp N6 &none     &kp M &kp N &kp E      &kp I   &kp O    OUTER
+   &kp LSFT &kp N7 &kp N8 &kp N9 &none     &kp K &kp H &kp COMMA  &kp DOT &kp SCLN OUTER
                            &trans &trans     &kp RSFT &mo 2
                       >;
                 };
