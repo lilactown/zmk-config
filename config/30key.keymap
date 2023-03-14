@@ -16,16 +16,22 @@
         bindings = <&kp Z>;
         layers = <0>;
       };
-      combo_v {
+      combo_x {
         timeout-ms = <50>;
         key-positions = <4 14>;
-        bindings = <&kp V>;
+        bindings = <&kp X>;
         layers = <0>;
       };
-      combo_k {
+      combo_comma {
         timeout-ms = <50>;
         key-positions = <5 15>;
-        bindings = <&kp K>;
+        bindings = <&kp COMMA>;
+        layers = <0>;
+      };
+      combo_semi {
+        timeout-ms = <50>;
+        key-positions = <9 19>;
+        bindings = <&kp SCLN>;
         layers = <0>;
       };
 
@@ -89,12 +95,12 @@
 // -----------------------------------------------------------------
 // |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  '  |
 // |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |
-// |     |  X  |  C  |  D  |     |   |     |  H  |  ,  |  .  |     |
+// |     |  D  |  C  |  V  |     |   |     |  K  |  H  |  .  |     |
 //                   | nav | spc |   | sft | sym |
                         bindings = <
-   &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U      &kp Y   &kp SQT
-   &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E      &kp I   &kp O
-         &kp X &kp C &kp D                 &kp H &kp COMMA  &kp DOT
+   &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U &kp Y   &kp SQT
+   &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E &kp I   &kp O
+         &kp D &kp C &kp V                 &kp K &kp H &kp DOT
                    &mo 1 &kp SPC     &kp RSFT &mo 2
                    >;
                 };
