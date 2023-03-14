@@ -1,0 +1,144 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+   #include "clojure.dtsi"
+
+   combos {
+      compatible = "zmk,combos";
+
+      // default layer
+      combo_z {
+        timeout-ms = <50>;
+        key-positions = <0 10>;
+        bindings = <&kp Z>;
+        layers = <0>;
+      };
+      combo_v {
+        timeout-ms = <50>;
+        key-positions = <4 14>;
+        bindings = <&kp V>;
+        layers = <0>;
+      };
+      combo_k {
+        timeout-ms = <50>;
+        key-positions = <5 15>;
+        bindings = <&kp K>;
+        layers = <0>;
+      };
+
+
+      // sym layer
+      combo_plus {
+        timeout-ms = <50>;
+        key-positions = <0 10>;
+        bindings = <&kp PLUS>;
+        layers = <2>;
+      };
+      combo_percent {
+        timeout-ms = <50>;
+        key-positions = <4 14>;
+        bindings = <&kp PRCNT>;
+        layers = <2>;
+      };
+      combo_exclamation {
+        timeout-ms = <50>;
+        key-positions = <5 15>;
+        bindings = <&kp EXCL>;
+        layers = <2>;
+      };
+
+
+      // num layer
+      combo_num_left_pinky {
+        timeout-ms = <50>;
+        key-positions = <0 10>;
+        bindings = <&bt BT_SEL 0>;
+        layers = <3>;
+      };
+
+      combo_num_bot {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&bt BT_CLR>;
+        layers = <3>;
+      };
+    };
+    behaviors {
+      mmv {
+        delay-ms = <0>;
+        acceleration-exponent=<1>;
+        time-to-max-speed-ms = <500>;
+      };
+      mwh {
+        delay-ms = <0>;
+        acceleration-exponent=<1>;
+        time-to-max-speed-ms = <0>;
+      };
+    };
+
+    macros {
+    };
+
+        keymap {
+                compatible = "zmk,keymap";
+
+                default {
+// -----------------------------------------------------------------
+// |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  '  |
+// |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |
+// |     |  X  |  C  |  D  |     |   |     |  H  |  ,  |  .  |     |
+//                   | nav | spc |   | sft | sym |
+                        bindings = <
+   &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U      &kp Y   &kp SQT
+   &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E      &kp I   &kp O
+         &kp X &kp C &kp D                 &kp H &kp COMMA  &kp DOT
+                   &mo 1 &kp SPC     &kp RSFT &mo 2
+                   >;
+                };
+
+                nav {
+// ---------------------------------------------------------------------------
+// |  tab | sapp |     | tabl | tabr |   | mlft | mdwn |  mup | mrgt | bspc |
+// | ctrl |  alt | cmd | shft |      |   | left | down |   up | rght | entr |
+// |      | spcr |     | vldn |      |   |      | pdwn | pgup | swpl |      |
+//                     |      |      |   | lclk |  num |
+                        bindings = <
+   &kp TAB  &kp LG(TAB)   &none        &kp LS(LC(TAB)) &kp LC(TAB)     &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &kp BSPC
+   &sk LCTL &sk LALT      &sk LGUI     &sk LSFT        &none           &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp RET
+            &kp LC(RIGHT) &kp C_VOL_DN &kp C_VOL_UP                                          &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none
+                                                     &trans &trans     &mkp LCLK &mo 3
+                      >;
+                };
+
+                sym {
+// -----------------------------------------------------------------
+// | ESC |  [  |  {  |  (  |  ~  |   |  ^  |  )  |  }  |  ]  |  `  |
+// |  -  |  *  |  =  |  _  |  $  |   |  #  | SFT | CMD | ALT | CTL |
+// |     |  |  |  @  |  /  |  %  |   |     |  \  |  &  |  ?  |     |
+//                   |     | ADJ |   |     |     |
+                        bindings = <
+   &kp ESC   &kp LBKT &kp LCUR  &kp LPAR  &kp TILDE     &kp CARET &kp RPAR &kp RCUR &kp RBKT  &kp GRAVE
+   &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DLLR      &kp HASH  &sk RSFT &sk RGUI &sk RALT  &sk RCTL
+             &kp PIPE &kp AT    &kp FSLH                          &kp BSLH &kp AMPS &kp QMARK
+                                       &mo 3 &trans     &trans &trans
+                       >;
+                };
+
+                num {
+// -------------------------------------------------------------------
+// |  1  |  2  |  3  |  4  |  5  |   |   6   |  7  |  8  |  9  |  0  |
+// | CTL | ALT | GUI | SFT |     |   |       | SFT | GUI | ALT | CTL |
+// |     | bt1 | bt2 | bt3 | bt4 |   | btclr |     |     |     |     |
+//                   |     |     |   |       |     |
+                        bindings = <
+   &kp N1   &kp N2       &kp N3       &kp N4       &kp N5     &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
+   &sk LCTL &sk LALT     &sk LGUI     &sk LSFT     &none      &none  &sk RSFT &sk RGUI &sk RALT &sk RCTL
+            &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                   &none    &none    &none
+                                            &trans &trans     &trans &trans
+                      >;
+                };
+        };
+};
