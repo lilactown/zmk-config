@@ -4,8 +4,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-   #include "clojure.dtsi"
-
    combos {
       compatible = "zmk,combos";
 
