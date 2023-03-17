@@ -52,6 +52,26 @@
       };
 
 
+      // nav layer
+      combo_first_tab {
+        timeout-ms = <50>;
+        key-positions = <2 12>;
+        bindings = <&kp LG(N1)>;
+        layers = <1>;
+      };
+      combo_last_tab {
+        timeout-ms = <50>;
+        key-positions = <3 13>;
+        bindings = <&kp LG(N9)>;
+        layers = <1>;
+      };
+      combo_last_tab {
+        timeout-ms = <50>;
+        key-positions = <4 14>;
+        bindings = <&kp LG(N)>;
+        layers = <1>;
+      };
+
 
       // sym layer
       combo_dqt {
@@ -130,14 +150,14 @@
 
                 nav {
 // ---------------------------------------------------------------------------
-// |  tab | sapp |     | tabl | tabr |   | mlft | mdwn |  mup | mrgt | bspc |
-// | ctrl |  alt | cmd | shft |      |   | left | down |   up | rght | entr |
-// |      | spcr |     | vldn |      |   |      | pdwn | pgup | swpl |      |
-//                     |      |      |   | lclk |  num |
+// |  tab | sapp | tabr | tabl | tabn |   | mlft | mdwn |  mup | mrgt | bspc |
+// | ctrl |  alt | cmd  | shft | swin |   | left | down |   up | rght | entr |
+// |      | spcr | vldn | vldn |      |   |      | pdwn | pgup | swpl |      |
+//                      |      |      |   | lclk |  num |
                         bindings = <
-   &kp TAB  &kp LG(TAB)   &none        &kp LS(LC(TAB)) &kp LC(TAB)       &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &kp BSPC
-   &sk LCTL &sk LALT      &sk LGUI     &sk LSFT        &kp LG(GRAVE)     &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp RET
-            &kp LC(RIGHT) &kp C_VOL_DN &kp C_VOL_UP                                          &mwh SCROLL_DOWN     &mwh SCROLL_UP        &none
+   &kp TAB  &kp LG(TAB)   &kp LS(LC(TAB)) &kp LC(TAB)  &kp LG(T)         &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &kp BSPC
+   &sk LCTL &sk LALT      &sk LGUI        &sk LSFT     &kp LG(GRAVE)     &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp RET
+            &kp LC(RIGHT) &kp C_VOL_DN    &kp C_VOL_UP                                        &kp LG(K)            &none                 &none
                                                        &trans &trans     &mkp LCLK &mo 3
                       >;
                 };
