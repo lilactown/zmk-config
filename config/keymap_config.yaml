@@ -23,6 +23,7 @@ draw_config:
         font-kerning: normal;
         text-rendering: optimizeLegibility;
         fill: #24292e;
+        text-transform: lowercase;
     }
 
     /* default key styling */
@@ -160,7 +161,14 @@ parse_config:
     UNDS: _
     XXXXXXX: ''
     _______: ''
-  raw_binding_map: {}
+  raw_binding_map: {"&mmv MOVE_HOR(-2000)": {t: LEFT, h: mouse},
+                    "&mmv MOVE_VERT(2000)": {t: UP, h: mouse},
+                    "&mmv MOVE_VERT(-2000)": {t: DOWN, h: mouse},
+                    "&mmv MOVE_HOR(2000)": {t: RIGHT, h: mouse},
+                    "&mwh SCROLL_DOWN": {t: DOWN, h: scroll},
+                    "&mwh SCROLL_UP": {t: UP, h: scroll},
+                    "&mkp LCLK": "lclk",
+                    }
   skip_binding_parsing: false
   zmk_keycode_map:
     AMPERSAND: '&'
@@ -229,3 +237,9 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
+    LC(RIGHT): prev space
+    LG(GRAVE): SWITCH WIN
+    LG(TAB): SWITCH APP
+    LS(LC(TAB)): PREV TAB
+    LC(TAB): NEXT TAB
+    RET: ENTER
