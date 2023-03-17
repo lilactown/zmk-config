@@ -1,0 +1,137 @@
+layout:
+  ortho_layout: {split: true, rows: 3, columns: 5, thumbs: 2, drop_pinky: true, drop_inner: true}
+layers:
+  default: [Q, W, F, P, B, J, L, U, Y, Z, A, R, S, T, G, M, N, E, I, O, V, C, D, H, K, X, nav, space, shift, sym]
+  nav:
+  - tab
+  - switch app
+  - ''
+  - prev tab
+  - next tab
+  - mouse left
+  - mouse up
+  - mouse down
+  - mouse right
+  - bspc
+  - {t: ctrl, h: sticky}
+  - {t: alt, h: sticky}
+  - {t: cmd, h: sticky}
+  - {t: shift, h: sticky}
+  - switch win
+  - left
+  - down
+  - up
+  - right
+  - enter
+  - prev space
+  - vol down
+  - vol up
+  - scroll down
+  - scroll up
+  - ''
+  - ''
+  - ''
+  - left click
+  - num
+  sym:
+  - esc
+  - <
+  - '>'
+  - ':'
+  - '~'
+  - ^
+  - ','
+  - .
+  - ''''
+  - '`'
+  - '-'
+  - '*'
+  - '='
+  - _
+  - $
+  - '#'
+  - {t: shift, h: sticky}
+  - {t: cmd, h: sticky}
+  - {t: alt, h: sticky}
+  - {t: ctrl, h: sticky}
+  - '|'
+  - '@'
+  - /
+  - '!'
+  - '&'
+  - '?'
+  - num
+  - ''
+  - ''
+  - ''
+  num:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ctrl, h: sticky}
+  - {t: alt, h: sticky}
+  - {t: cmd, h: sticky}
+  - {t: shift, h: sticky}
+  - ''
+  - ''
+  - {t: shift, h: sticky}
+  - {t: cmd, h: sticky}
+  - {t: alt, h: sticky}
+  - {t: ctrl, h: sticky}
+  - BT 1
+  - BT 2
+  - BT 3
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+combos:
+- p: [16, 23]
+  k: ;
+  l: [default]
+- p: [1, 11]
+  k: '['
+  l: [default]
+- p: [2, 12]
+  k: '{'
+  l: [default]
+- p: [3, 13]
+  k: (
+  l: [default]
+- p: [8, 18]
+  k: ']'
+  l: [default]
+- p: [7, 17]
+  k: '}'
+  l: [default]
+- p: [6, 16]
+  k: )
+  l: [default]
+- p: [8, 18]
+  k: '"'
+  l: [sym]
+- p: [12, 21]
+  k: +
+  l: [sym]
+- p: [13, 22]
+  k: \
+  l: [sym]
+- p: [11, 20]
+  k: '%'
+  l: [sym]
+- p: [0, 10]
+  k: BT 0
+  l: [num]
+- p: [23, 24]
+  k: BT CLR
+  l: [num]
