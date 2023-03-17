@@ -47,7 +47,7 @@
       combo_paren_open {
         timeout-ms = <50>;
         key-positions = <3 13>;
-        bindings = <&kp LCUR>;
+        bindings = <&kp LPAR>;
         layers = <0>;
       };
       combo_square_close {
@@ -65,7 +65,7 @@
       combo_paren_open {
         timeout-ms = <50>;
         key-positions = <6 16>;
-        bindings = <&kp RCUR>;
+        bindings = <&kp RPAR>;
         layers = <0>;
       };
 
