@@ -56,7 +56,7 @@
       // sym layer
       combo_dqt {
         timeout-ms = <50>;
-        key-positions = <11 20>;
+        key-positions = <8 18>;
         bindings = <&kp DQT>;
         layers = <2>;
       };
@@ -66,15 +66,15 @@
         bindings = <&kp PLUS>;
         layers = <2>;
       };
-      combo_fslash {
+      combo_bslash {
         timeout-ms = <50>;
         key-positions = <13 22>;
-        bindings = <&kp FSLH>;
+        bindings = <&kp BSLH>;
         layers = <2>;
       };
       combo_percent {
         timeout-ms = <50>;
-        key-positions = <16 23>;
+        key-positions = <11 20>;
         bindings = <&kp PRCNT>;
         layers = <2>;
       };
