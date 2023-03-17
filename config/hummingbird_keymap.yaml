@@ -1,40 +1,40 @@
 layout:
   ortho_layout: {split: true, rows: 3, columns: 5, thumbs: 2, drop_pinky: true, drop_inner: true}
 layers:
-  default: [Q, W, F, P, B, J, L, U, Y, Z, A, R, S, T, G, M, N, E, I, O, V, C, D, H, K, X, nav, space, shift, sym]
+  default: [Q, W, F, P, B, J, L, U, Y, Z, A, R, S, T, G, M, N, E, I, O, V, C, D, H, K, X, nav, SPC, RSFT, sym]
   nav:
-  - tab
-  - switch app
+  - TAB
+  - SWITCH APP
   - ''
-  - prev tab
-  - next tab
-  - mouse left
-  - mouse up
-  - mouse down
-  - mouse right
-  - bspc
-  - {t: ctrl, h: sticky}
-  - {t: alt, h: sticky}
-  - {t: cmd, h: sticky}
-  - {t: shift, h: sticky}
-  - switch win
-  - left
-  - down
-  - up
-  - right
-  - enter
+  - PREV TAB
+  - NEXT TAB
+  - {t: LEFT, h: mouse}
+  - {t: UP, h: mouse}
+  - {t: DOWN, h: mouse}
+  - {t: RIGHT, h: mouse}
+  - BSPC
+  - {t: LCTL, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LSFT, h: sticky}
+  - SWITCH WIN
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ENTER
   - prev space
-  - vol down
-  - vol up
-  - scroll down
-  - scroll up
+  - VOL DN
+  - VOL UP
+  - {t: DOWN, h: scroll}
+  - {t: UP, h: scroll}
   - ''
   - ''
   - ''
-  - left click
+  - lclk
   - num
   sym:
-  - esc
+  - ESC
   - <
   - '>'
   - ':'
@@ -50,10 +50,10 @@ layers:
   - _
   - $
   - '#'
-  - {t: shift, h: sticky}
-  - {t: cmd, h: sticky}
-  - {t: alt, h: sticky}
-  - {t: ctrl, h: sticky}
+  - {t: RSFT, h: sticky}
+  - {t: RGUI, h: sticky}
+  - {t: RALT, h: sticky}
+  - {t: RCTL, h: sticky}
   - '|'
   - '@'
   - /
@@ -75,16 +75,16 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ctrl, h: sticky}
-  - {t: alt, h: sticky}
-  - {t: cmd, h: sticky}
-  - {t: shift, h: sticky}
+  - {t: LCTL, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LSFT, h: sticky}
   - ''
   - ''
-  - {t: shift, h: sticky}
-  - {t: cmd, h: sticky}
-  - {t: alt, h: sticky}
-  - {t: ctrl, h: sticky}
+  - {t: RSFT, h: sticky}
+  - {t: RGUI, h: sticky}
+  - {t: RALT, h: sticky}
+  - {t: RCTL, h: sticky}
   - BT 1
   - BT 2
   - BT 3
