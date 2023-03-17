@@ -238,8 +238,13 @@ parse_config:
     UNDER: _
     UNDERSCORE: _
     LC(RIGHT): prev space
+    LC(TAB): NEXT TAB
+    LG(N1): first tab
+    LG(N9): last tab
     LG(GRAVE): SWITCH WIN
+    LG(K): cmdk
+    LG(N): NEW WIN
+    LG(T): NEW TAB
     LG(TAB): SWITCH APP
     LS(LC(TAB)): PREV TAB
-    LC(TAB): NEXT TAB
     RET: ENTER

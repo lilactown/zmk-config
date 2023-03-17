@@ -5,9 +5,9 @@ layers:
   nav:
   - TAB
   - SWITCH APP
-  - ''
   - PREV TAB
   - NEXT TAB
+  - NEW TAB
   - {t: LEFT, h: mouse}
   - {t: UP, h: mouse}
   - {t: DOWN, h: mouse}
@@ -26,8 +26,8 @@ layers:
   - prev space
   - VOL DN
   - VOL UP
-  - {t: DOWN, h: scroll}
-  - {t: UP, h: scroll}
+  - cmdk
+  - ''
   - ''
   - ''
   - ''
@@ -117,6 +117,15 @@ combos:
 - p: [6, 16]
   k: )
   l: [default]
+- p: [2, 12]
+  k: first tab
+  l: [nav]
+- p: [3, 13]
+  k: last tab
+  l: [nav]
+- p: [4, 14]
+  k: NEW WIN
+  l: [nav]
 - p: [8, 18]
   k: '"'
   l: [sym]
