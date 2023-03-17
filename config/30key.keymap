@@ -54,22 +54,28 @@
 
 
       // sym layer
+      combo_dqt {
+        timeout-ms = <50>;
+        key-positions = <11 20>;
+        bindings = <&kp DQT>;
+        layers = <2>;
+      };
       combo_plus {
         timeout-ms = <50>;
         key-positions = <12 21>;
         bindings = <&kp PLUS>;
         layers = <2>;
       };
-      combo_percent {
-        timeout-ms = <50>;
-        key-positions = <13 22>;
-        bindings = <&kp PRCNT>;
-        layers = <2>;
-      };
       combo_fslash {
         timeout-ms = <50>;
-        key-positions = <16 23>;
+        key-positions = <13 22>;
         bindings = <&kp FSLH>;
+        layers = <2>;
+      };
+      combo_percent {
+        timeout-ms = <50>;
+        key-positions = <16 23>;
+        bindings = <&kp PRCNT>;
         layers = <2>;
       };
 
