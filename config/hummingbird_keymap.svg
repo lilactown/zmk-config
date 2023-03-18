@@ -131,7 +131,7 @@ path {
 <rect rx="6.0" ry="6.0" x="272.0" y="226.0" width="56.0" height="52.0" class=""/>
 <text x="300.0" y="252.0" class="tap">SPC</text>
 <rect rx="6.0" ry="6.0" x="362.0" y="226.0" width="56.0" height="52.0" class=""/>
-<text x="390.0" y="252.0" class="tap">RSFT</text>
+<text x="390.0" y="252.0" class="tap">⇧</text>
 <rect rx="6.0" ry="6.0" x="422.0" y="226.0" width="56.0" height="52.0" class=""/>
 <text x="450.0" y="252.0" class="tap">sym</text>
 <rect rx="6.0" ry="6.0" x="436.0" y="155.0" width="28.0" height="26.0" class="combo"/>
@@ -152,58 +152,58 @@ path {
 <g class="layer-nav">
 <text x="30.0" y="308.0" class="label">nav:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="366.0" width="56.0" height="52.0" class=""/>
-<text x="60.0" y="392.0" class="tap">TAB</text>
+<text x="60.0" y="392.0" class="tap">⇥</text>
 <rect rx="6.0" ry="6.0" x="92.0" y="338.0" width="56.0" height="52.0" class=""/>
 <text x="120.0" y="364.0" class="tap">
 <tspan x="120.0" dy="-0.6em">SWITCH</tspan><tspan x="120.0" dy="1.2em">APP</tspan></text>
 <rect rx="6.0" ry="6.0" x="152.0" y="338.0" width="56.0" height="52.0" class=""/>
 <text x="180.0" y="364.0" class="tap">
-<tspan x="180.0" dy="-0.6em">PREV</tspan><tspan x="180.0" dy="1.2em">TAB</tspan></text>
+<tspan x="180.0" dy="-0.6em">TAB</tspan><tspan x="180.0" dy="1.2em">←</tspan></text>
 <rect rx="6.0" ry="6.0" x="212.0" y="338.0" width="56.0" height="52.0" class=""/>
 <text x="240.0" y="364.0" class="tap">
-<tspan x="240.0" dy="-0.6em">NEXT</tspan><tspan x="240.0" dy="1.2em">TAB</tspan></text>
+<tspan x="240.0" dy="-0.6em">TAB</tspan><tspan x="240.0" dy="1.2em">→</tspan></text>
 <rect rx="6.0" ry="6.0" x="272.0" y="366.0" width="56.0" height="52.0" class=""/>
 <text x="300.0" y="392.0" class="tap">
 <tspan x="300.0" dy="-0.6em">NEW</tspan><tspan x="300.0" dy="1.2em">TAB</tspan></text>
 <rect rx="6.0" ry="6.0" x="362.0" y="366.0" width="56.0" height="52.0" class=""/>
-<text x="390.0" y="392.0" class="tap">LEFT</text>
+<text x="390.0" y="392.0" class="tap">←</text>
 <text x="390.0" y="416.0" class="hold">mouse</text>
 <rect rx="6.0" ry="6.0" x="422.0" y="338.0" width="56.0" height="52.0" class=""/>
-<text x="450.0" y="364.0" class="tap">UP</text>
+<text x="450.0" y="364.0" class="tap">↑</text>
 <text x="450.0" y="388.0" class="hold">mouse</text>
 <rect rx="6.0" ry="6.0" x="482.0" y="338.0" width="56.0" height="52.0" class=""/>
-<text x="510.0" y="364.0" class="tap">DOWN</text>
+<text x="510.0" y="364.0" class="tap">↓</text>
 <text x="510.0" y="388.0" class="hold">mouse</text>
 <rect rx="6.0" ry="6.0" x="542.0" y="338.0" width="56.0" height="52.0" class=""/>
-<text x="570.0" y="364.0" class="tap">RIGHT</text>
+<text x="570.0" y="364.0" class="tap">→</text>
 <text x="570.0" y="388.0" class="hold">mouse</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="366.0" width="56.0" height="52.0" class=""/>
-<text x="630.0" y="392.0" class="tap">BSPC</text>
+<text x="630.0" y="392.0" class="tap">⌫</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="422.0" width="56.0" height="52.0" class=""/>
-<text x="60.0" y="448.0" class="tap">LCTL</text>
+<text x="60.0" y="448.0" class="tap">⌃</text>
 <text x="60.0" y="472.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="92.0" y="394.0" width="56.0" height="52.0" class=""/>
-<text x="120.0" y="420.0" class="tap">LALT</text>
+<text x="120.0" y="420.0" class="tap">⌥</text>
 <text x="120.0" y="444.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="152.0" y="394.0" width="56.0" height="52.0" class=""/>
-<text x="180.0" y="420.0" class="tap">LGUI</text>
+<text x="180.0" y="420.0" class="tap">⌘</text>
 <text x="180.0" y="444.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="212.0" y="394.0" width="56.0" height="52.0" class=""/>
-<text x="240.0" y="420.0" class="tap">LSFT</text>
+<text x="240.0" y="420.0" class="tap">⇧</text>
 <text x="240.0" y="444.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="272.0" y="422.0" width="56.0" height="52.0" class=""/>
 <text x="300.0" y="448.0" class="tap">
 <tspan x="300.0" dy="-0.6em">SWITCH</tspan><tspan x="300.0" dy="1.2em">WIN</tspan></text>
 <rect rx="6.0" ry="6.0" x="362.0" y="422.0" width="56.0" height="52.0" class=""/>
-<text x="390.0" y="448.0" class="tap">LEFT</text>
+<text x="390.0" y="448.0" class="tap">←</text>
 <rect rx="6.0" ry="6.0" x="422.0" y="394.0" width="56.0" height="52.0" class=""/>
-<text x="450.0" y="420.0" class="tap">DOWN</text>
+<text x="450.0" y="420.0" class="tap">↓</text>
 <rect rx="6.0" ry="6.0" x="482.0" y="394.0" width="56.0" height="52.0" class=""/>
-<text x="510.0" y="420.0" class="tap">UP</text>
+<text x="510.0" y="420.0" class="tap">↑</text>
 <rect rx="6.0" ry="6.0" x="542.0" y="394.0" width="56.0" height="52.0" class=""/>
-<text x="570.0" y="420.0" class="tap">RIGHT</text>
+<text x="570.0" y="420.0" class="tap">→</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="422.0" width="56.0" height="52.0" class=""/>
-<text x="630.0" y="448.0" class="tap">ENTER</text>
+<text x="630.0" y="448.0" class="tap">↩</text>
 <rect rx="6.0" ry="6.0" x="92.0" y="450.0" width="56.0" height="52.0" class=""/>
 <text x="120.0" y="476.0" class="tap">
 <tspan x="120.0" dy="-0.6em">prev</tspan><tspan x="120.0" dy="1.2em">space</tspan></text>
@@ -214,7 +214,7 @@ path {
 <text x="240.0" y="476.0" class="tap">
 <tspan x="240.0" dy="-0.6em">VOL</tspan><tspan x="240.0" dy="1.2em">UP</tspan></text>
 <rect rx="6.0" ry="6.0" x="422.0" y="450.0" width="56.0" height="52.0" class=""/>
-<text x="450.0" y="476.0" class="tap">cmdk</text>
+<text x="450.0" y="476.0" class="tap">⌘K</text>
 <rect rx="6.0" ry="6.0" x="482.0" y="450.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="542.0" y="450.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="212.0" y="506.0" width="56.0" height="52.0" class=""/>
@@ -268,16 +268,16 @@ path {
 <rect rx="6.0" ry="6.0" x="362.0" y="702.0" width="56.0" height="52.0" class=""/>
 <text x="390.0" y="728.0" class="tap">#</text>
 <rect rx="6.0" ry="6.0" x="422.0" y="674.0" width="56.0" height="52.0" class=""/>
-<text x="450.0" y="700.0" class="tap">RSFT</text>
+<text x="450.0" y="700.0" class="tap">⇧</text>
 <text x="450.0" y="724.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="482.0" y="674.0" width="56.0" height="52.0" class=""/>
-<text x="510.0" y="700.0" class="tap">RGUI</text>
+<text x="510.0" y="700.0" class="tap">⌘</text>
 <text x="510.0" y="724.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="542.0" y="674.0" width="56.0" height="52.0" class=""/>
-<text x="570.0" y="700.0" class="tap">RALT</text>
+<text x="570.0" y="700.0" class="tap">⌥</text>
 <text x="570.0" y="724.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="702.0" width="56.0" height="52.0" class=""/>
-<text x="630.0" y="728.0" class="tap">RCTL</text>
+<text x="630.0" y="728.0" class="tap">⌃</text>
 <text x="630.0" y="752.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="92.0" y="730.0" width="56.0" height="52.0" class=""/>
 <text x="120.0" y="756.0" class="tap">|</text>
@@ -328,30 +328,30 @@ path {
 <rect rx="6.0" ry="6.0" x="602.0" y="926.0" width="56.0" height="52.0" class=""/>
 <text x="630.0" y="952.0" class="tap">0</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="982.0" width="56.0" height="52.0" class=""/>
-<text x="60.0" y="1008.0" class="tap">LCTL</text>
+<text x="60.0" y="1008.0" class="tap">⌃</text>
 <text x="60.0" y="1032.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="92.0" y="954.0" width="56.0" height="52.0" class=""/>
-<text x="120.0" y="980.0" class="tap">LALT</text>
+<text x="120.0" y="980.0" class="tap">⌥</text>
 <text x="120.0" y="1004.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="152.0" y="954.0" width="56.0" height="52.0" class=""/>
-<text x="180.0" y="980.0" class="tap">LGUI</text>
+<text x="180.0" y="980.0" class="tap">⌘</text>
 <text x="180.0" y="1004.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="212.0" y="954.0" width="56.0" height="52.0" class=""/>
-<text x="240.0" y="980.0" class="tap">LSFT</text>
+<text x="240.0" y="980.0" class="tap">⇧</text>
 <text x="240.0" y="1004.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="272.0" y="982.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="362.0" y="982.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="422.0" y="954.0" width="56.0" height="52.0" class=""/>
-<text x="450.0" y="980.0" class="tap">RSFT</text>
+<text x="450.0" y="980.0" class="tap">⇧</text>
 <text x="450.0" y="1004.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="482.0" y="954.0" width="56.0" height="52.0" class=""/>
-<text x="510.0" y="980.0" class="tap">RGUI</text>
+<text x="510.0" y="980.0" class="tap">⌘</text>
 <text x="510.0" y="1004.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="542.0" y="954.0" width="56.0" height="52.0" class=""/>
-<text x="570.0" y="980.0" class="tap">RALT</text>
+<text x="570.0" y="980.0" class="tap">⌥</text>
 <text x="570.0" y="1004.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="602.0" y="982.0" width="56.0" height="52.0" class=""/>
-<text x="630.0" y="1008.0" class="tap">RCTL</text>
+<text x="630.0" y="1008.0" class="tap">⌃</text>
 <text x="630.0" y="1032.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="92.0" y="1010.0" width="56.0" height="52.0" class=""/>
 <text x="120.0" y="1036.0" class="tap">

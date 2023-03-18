@@ -161,12 +161,12 @@ parse_config:
     UNDS: _
     XXXXXXX: ''
     _______: ''
-  raw_binding_map: {"&mmv MOVE_HOR(-2000)": {t: LEFT, h: mouse},
-                    "&mmv MOVE_VERT(2000)": {t: UP, h: mouse},
-                    "&mmv MOVE_VERT(-2000)": {t: DOWN, h: mouse},
-                    "&mmv MOVE_HOR(2000)": {t: RIGHT, h: mouse},
-                    "&mwh SCROLL_DOWN": {t: DOWN, h: scroll},
-                    "&mwh SCROLL_UP": {t: UP, h: scroll},
+  raw_binding_map: {"&mmv MOVE_HOR(-2000)": {t: ←, h: mouse},
+                    "&mmv MOVE_VERT(2000)": {t: ↑, h: mouse},
+                    "&mmv MOVE_VERT(-2000)": {t: ↓, h: mouse},
+                    "&mmv MOVE_HOR(2000)": {t: →, h: mouse},
+                    "&mwh SCROLL_DOWN": {t: ↓, h: scroll},
+                    "&mwh SCROLL_UP": {t: ↑, h: scroll},
                     "&mkp LCLK": "lclk",
                     }
   skip_binding_parsing: false
@@ -181,6 +181,7 @@ parse_config:
     AT_SIGN: '@'
     BACKSLASH: \
     BSLH: \
+    BSPC: ⌫
     CARET: ^
     COLON: ':'
     COMMA: ','
@@ -233,18 +234,31 @@ parse_config:
     SLASH: /
     SQT: ''''
     STAR: '*'
+    TAB: ⇥
     TILDE: '~'
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
     LC(RIGHT): prev space
-    LC(TAB): NEXT TAB
+    LC(TAB): TAB →
     LG(N1): first tab
     LG(N9): last tab
     LG(GRAVE): SWITCH WIN
-    LG(K): cmdk
+    LG(K): ⌘K
     LG(N): NEW WIN
     LG(T): NEW TAB
     LG(TAB): SWITCH APP
-    LS(LC(TAB)): PREV TAB
-    RET: ENTER
+    LS(LC(TAB)): TAB ←
+    RET: ↩
+    LEFT: ←
+    RIGHT: →
+    UP: ↑
+    DOWN: ↓
+    LCTL: ⌃
+    LALT: ⌥
+    LGUI: ⌘
+    LSFT: ⇧
+    RCTL: ⌃
+    RALT: ⌥
+    RGUI: ⌘
+    RSFT: ⇧

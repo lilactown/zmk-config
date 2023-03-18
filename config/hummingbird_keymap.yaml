@@ -1,32 +1,32 @@
 layout:
   ortho_layout: {split: true, rows: 3, columns: 5, thumbs: 2, drop_pinky: true, drop_inner: true}
 layers:
-  default: [Q, W, F, P, B, J, L, U, Y, Z, A, R, S, T, G, M, N, E, I, O, V, C, D, H, K, X, nav, SPC, RSFT, sym]
+  default: [Q, W, F, P, B, J, L, U, Y, Z, A, R, S, T, G, M, N, E, I, O, V, C, D, H, K, X, nav, SPC, "\u21E7", sym]
   nav:
-  - TAB
+  - "\u21E5"
   - SWITCH APP
-  - PREV TAB
-  - NEXT TAB
+  - "TAB \u2190"
+  - "TAB \u2192"
   - NEW TAB
-  - {t: LEFT, h: mouse}
-  - {t: UP, h: mouse}
-  - {t: DOWN, h: mouse}
-  - {t: RIGHT, h: mouse}
-  - BSPC
-  - {t: LCTL, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LGUI, h: sticky}
-  - {t: LSFT, h: sticky}
+  - {t: "\u2190", h: mouse}
+  - {t: "\u2191", h: mouse}
+  - {t: "\u2193", h: mouse}
+  - {t: "\u2192", h: mouse}
+  - "\u232B"
+  - {t: "\u2303", h: sticky}
+  - {t: "\u2325", h: sticky}
+  - {t: "\u2318", h: sticky}
+  - {t: "\u21E7", h: sticky}
   - SWITCH WIN
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - ENTER
+  - "\u2190"
+  - "\u2193"
+  - "\u2191"
+  - "\u2192"
+  - "\u21A9"
   - prev space
   - VOL DN
   - VOL UP
-  - cmdk
+  - "\u2318K"
   - ''
   - ''
   - ''
@@ -50,10 +50,10 @@ layers:
   - _
   - $
   - '#'
-  - {t: RSFT, h: sticky}
-  - {t: RGUI, h: sticky}
-  - {t: RALT, h: sticky}
-  - {t: RCTL, h: sticky}
+  - {t: "\u21E7", h: sticky}
+  - {t: "\u2318", h: sticky}
+  - {t: "\u2325", h: sticky}
+  - {t: "\u2303", h: sticky}
   - '|'
   - '@'
   - /
@@ -75,16 +75,16 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: LCTL, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LGUI, h: sticky}
-  - {t: LSFT, h: sticky}
+  - {t: "\u2303", h: sticky}
+  - {t: "\u2325", h: sticky}
+  - {t: "\u2318", h: sticky}
+  - {t: "\u21E7", h: sticky}
   - ''
   - ''
-  - {t: RSFT, h: sticky}
-  - {t: RGUI, h: sticky}
-  - {t: RALT, h: sticky}
-  - {t: RCTL, h: sticky}
+  - {t: "\u21E7", h: sticky}
+  - {t: "\u2318", h: sticky}
+  - {t: "\u2325", h: sticky}
+  - {t: "\u2303", h: sticky}
   - BT 1
   - BT 2
   - BT 3
