@@ -8,12 +8,6 @@
       compatible = "zmk,combos";
 
       // default layer
-      combo_semi {
-        timeout-ms = <50>;
-        key-positions = <16 23>;
-        bindings = <&kp SEMI>;
-        layers = <0>;
-      };
       combo_square_open {
         timeout-ms = <50>;
         key-positions = <1 11>;
@@ -74,10 +68,16 @@
 
 
       // sym layer
-      combo_dqt {
+      combo_lt {
         timeout-ms = <50>;
-        key-positions = <8 18>;
-        bindings = <&kp DQT>;
+        key-positions = <1 11>;
+        bindings = <&kp LT>;
+        layers = <2>;
+      };
+      combo_gt {
+        timeout-ms = <50>;
+        key-positions = <2 12>;
+        bindings = <&kp GT>;
         layers = <2>;
       };
       combo_plus {
@@ -92,10 +92,10 @@
         bindings = <&kp BSLH>;
         layers = <2>;
       };
-      combo_percent {
+      combo_pipe {
         timeout-ms = <50>;
         key-positions = <11 20>;
-        bindings = <&kp PRCNT>;
+        bindings = <&kp PIPE>;
         layers = <2>;
       };
 
@@ -164,14 +164,14 @@
 
                 sym {
 // -----------------------------------------------------------------
-// | ESC |  <  |  >  |  :  |  ~  |   |  ^  |  ,  |  .  |  '  |  `  |
+// | ESC |  ^  |  ;  |  :  |  ~  |   |  `  |  ,  |  .  |  "  |  '  |
 // |  -  |  *  |  =  |  _  |  $  |   |  #  | SFT | CMD | ALT | CTL |
 // |     |  |  |  @  |  /  |     |   |     |  !  |  &  |  ?  |     |
 //                   |     | ADJ |   |     |     |
                         bindings = <
-   &kp ESC   &kp LT   &kp GT    &kp COLON &kp TILDE     &kp CARET &kp COMMA &kp DOT  &kp SQT  &kp GRAVE
-   &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DLLR      &kp HASH  &sk RSFT  &sk RGUI &sk RALT &sk RCTL
-             &kp PIPE &kp AT    &kp FSLH                          &kp EXCL  &kp AMPS &kp QMARK
+   &kp ESC   &kp CARET &kp SEMI  &kp COLON &kp TILDE     &kp GRAVE &kp COMMA &kp DOT  &kp DQT   &kp SQT
+   &kp MINUS &kp STAR  &kp EQUAL &kp UNDER &kp DLLR      &kp HASH  &sk RSFT  &sk RGUI &sk RALT  &sk RCTL
+             &kp PRCNT &kp AT    &kp FSLH                          &kp EXCL  &kp AMPS &kp QMARK
                                        &mo 3 &trans     &trans &trans
                        >;
                 };
