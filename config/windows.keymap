@@ -1,0 +1,193 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+   combos {
+      compatible = "zmk,combos";
+
+      // default layer
+      combo_square_open {
+        timeout-ms = <50>;
+        key-positions = <1 11>;
+        bindings = <&kp LBKT>;
+        layers = <0>;
+      };
+      combo_curly_open {
+        timeout-ms = <50>;
+        key-positions = <2 12>;
+        bindings = <&kp LCUR>;
+        layers = <0>;
+      };
+      combo_paren_open {
+        timeout-ms = <50>;
+        key-positions = <3 13>;
+        bindings = <&kp LPAR>;
+        layers = <0>;
+      };
+      combo_square_close {
+        timeout-ms = <50>;
+        key-positions = <8 18>;
+        bindings = <&kp RBKT>;
+        layers = <0>;
+      };
+      combo_curly_close {
+        timeout-ms = <50>;
+        key-positions = <7 17>;
+        bindings = <&kp RCUR>;
+        layers = <0>;
+      };
+      combo_paren_close {
+        timeout-ms = <50>;
+        key-positions = <6 16>;
+        bindings = <&kp RPAR>;
+        layers = <0>;
+      };
+
+
+      // nav layer
+      combo_first_tab {
+        timeout-ms = <50>;
+        key-positions = <2 12>;
+        bindings = <&kp LG(N1)>;
+        layers = <1>;
+      };
+      combo_last_tab {
+        timeout-ms = <50>;
+        key-positions = <3 13>;
+        bindings = <&kp LG(N9)>;
+        layers = <1>;
+      };
+      combo_new_tab {
+        timeout-ms = <50>;
+        key-positions = <4 14>;
+        bindings = <&kp LG(N)>;
+        layers = <1>;
+      };
+
+
+      // sym layer
+      combo_lt {
+        timeout-ms = <50>;
+        key-positions = <1 11>;
+        bindings = <&kp LT>;
+        layers = <2>;
+      };
+      combo_gt {
+        timeout-ms = <50>;
+        key-positions = <2 12>;
+        bindings = <&kp GT>;
+        layers = <2>;
+      };
+      combo_plus {
+        timeout-ms = <50>;
+        key-positions = <12 21>;
+        bindings = <&kp PLUS>;
+        layers = <2>;
+      };
+      combo_bslash {
+        timeout-ms = <50>;
+        key-positions = <13 22>;
+        bindings = <&kp BSLH>;
+        layers = <2>;
+      };
+      combo_pipe {
+        timeout-ms = <50>;
+        key-positions = <11 20>;
+        bindings = <&kp PIPE>;
+        layers = <2>;
+      };
+
+
+      // num layer
+      combo_num_left_pinky {
+        timeout-ms = <50>;
+        key-positions = <0 10>;
+        bindings = <&bt BT_SEL 0>;
+        layers = <3>;
+      };
+
+      combo_num_bot {
+        timeout-ms = <50>;
+        key-positions = <23 24>;
+        bindings = <&bt BT_CLR>;
+        layers = <3>;
+      };
+    };
+    behaviors {
+      mmv {
+        delay-ms = <0>;
+        acceleration-exponent=<1>;
+        time-to-max-speed-ms = <500>;
+      };
+      mwh {
+        delay-ms = <0>;
+        acceleration-exponent=<1>;
+        time-to-max-speed-ms = <0>;
+      };
+    };
+
+    macros {
+    };
+
+        keymap {
+                compatible = "zmk,keymap";
+
+                default {
+// -----------------------------------------------------------------
+// |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  Z  |
+// |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |
+// |  ,  |  V  |  C  |  D  |  .  |   |  ;  |  H  |  K  |  X  |  '  |
+// |  F1 |  F2 |  F3 | nav | spc |   | sft | sym | F4  | F5  | F6  |
+                        bindings = <
+   &kp Q     &kp W   &kp F  &kp P &kp B       &kp J    &kp L &kp U  &kp Y  &kp Z
+   &kp A     &kp R   &kp S  &kp T &kp G       &kp M    &kp N &kp E  &kp I  &kp O
+   &kp COMMA &kp V   &kp C  &kp D &kp DOT     &kp SEMI &kp H &kp K  &kp X  &kp SQT
+   &kp F1    & kp F2 &kp F3 &mo 1 &kp SPC     &kp RSFT &mo 2 &kp F4 &kp F5 &kp F6
+                   >;
+                };
+
+                nav {
+// ---------------------------------------------------------------------------
+// |  tab | sapp | tabr | tabl | tabn |   | mlft | mdwn |  mup | mrgt | bspc |
+// |  win |  alt | ctrl | shft | swin |   | left | down |   up | rght | entr |
+// |      | spcr | vldn | vldn |      |   |      | pdwn | pgup | swpl |  del |
+//                      |      |      |   | lclk |  num |  F7  |  F8  |  F9  |
+                        bindings = <
+   &kp TAB  &kp LG(TAB)   &kp LS(LC(TAB)) &kp LC(TAB)  &kp LG(T)         &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &kp BSPC
+   &sk LGUI &sk LALT      &sk LCTL        &sk LSFT     &kp LG(GRAVE)     &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp RET
+            &kp LC(RIGHT) &kp C_VOL_DN    &kp C_VOL_UP                                        &kp PG_DN            &kp PG_UP             &none               &kp DEL
+                                                       &trans &trans     &mkp LCLK &mo 3      &kp F7               &kp F8                &kp F9
+                      >;
+                };
+
+                sym {
+// -----------------------------------------------------------------
+// | ESC |  ^  |  ,  |  .  |  ~  |   |  `  |  ;  |  :  |  "  |  '  |
+// |  -  |  *  |  =  |  _  |  $  |   |  #  | SFT | CTL | ALT | WIN |
+// |     |  |  |  @  |  /  |     |   |     |  !  |  &  |  ?  |     |
+//                   |     | ADJ |   |     |     |
+                        bindings = <
+   &kp ESC   &kp CARET &kp COMMA &kp DOT   &kp TILDE     &kp GRAVE &kp SEMI  &kp COLON &kp DQT   &kp SQT
+   &kp MINUS &kp STAR  &kp EQUAL &kp UNDER &kp DLLR      &kp HASH  &sk RSFT  &sk RCTL  &sk RALT  &sk RGUI
+             &kp PRCNT &kp AT    &kp FSLH                          &kp EXCL  &kp AMPS  &kp QMARK
+                                       &mo 3 &trans     &trans &trans
+                       >;
+                };
+
+                num {
+// -------------------------------------------------------------------
+// |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
+// | WIN | ALT | CTL | SFT |     |   |     | SFT | GUI | ALT | CTL |
+// |     | bt1 | bt2 | bt3 |     |   |     |     |     |     |     |
+//                   |     |     |   |     |     |
+                        bindings = <
+   &kp N1   &kp N2       &kp N3       &kp N4       &kp N5     &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
+   &sk LGUI &sk LALT     &sk LCTL     &sk LSFT     &none      &none  &sk RSFT &sk RCTL &sk RALT &sk RGUI
+            &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                   &none    &none    &none
+                                            &trans &trans     &trans &trans
+                      >;
+                };
+        };
+};
