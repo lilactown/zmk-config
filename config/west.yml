@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: nickconway
       url-base: https://github.com/nickconway
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: nickconway
