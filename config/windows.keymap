@@ -155,7 +155,7 @@
 // |      | spcr | vldn | vldn |      |   |      | pdwn | pgup | swpl |  del |
 //                      |      |      |   | lclk |  num |  F7  |  F8  |  F9  |
                         bindings = <
-   &kp TAB  &kp LG(TAB)   &kp LS(LC(TAB)) &kp LC(TAB)  &kp LG(T)         &mmv MOVE_HOR(-2000) &mmv MOVE_VERT(2000) &mmv MOVE_VERT(-2000) &mmv MOVE_HOR(2000) &kp BSPC
+   &kp TAB  &kp LG(TAB)   &kp LS(LC(TAB)) &kp LC(TAB)  &kp LG(T)         &none &none &none &none &kp BSPC
    &sk LGUI &sk LALT      &sk LCTL        &sk LSFT     &kp LG(GRAVE)     &kp LEFT             &kp DOWN             &kp UP                &kp RIGHT           &kp RET
             &kp LC(RIGHT) &kp C_VOL_DN    &kp C_VOL_UP                                        &kp PG_DN            &kp PG_UP             &none               &kp DEL
                                                        &trans &trans     &mkp LCLK &mo 3      &kp F7               &kp F8                &kp F9
