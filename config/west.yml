@@ -9,5 +9,8 @@ manifest:
       remote: nickconway
       revision: dev
       import: app/west.yml
+    - name: technikable-zmk-config
+      remote: petejohanson
+      revision: main
   self:
     path: config
